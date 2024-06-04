@@ -1,31 +1,29 @@
+<script setup>
+import { ref } from "vue";
+
+const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
+</script>
 
 <template>
-
-  <div class="flex flex-wrap px-[3%] bg-[#1C1E53] relative">
-    <div class="md:mb-[6%] md:mt-[12%] mb-[14%]  mt-[30%] w-full flex md:flex-nowrap flex-wrap gap-[10%] items-center">
-      <div class="flex flex-wrap md:mb-0 mb-[15%]">
-        <h1 class="text-white md:text-start text-center font-semibold md:text-[54px] text-4xl md:leading-[74px] leading-[55px]">
-          Building stellar websites for early startups
-        </h1>
-        <p class="text-white md:text-start text-center mt-6 text-[16px] font-medium">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt.
-        </p>
-        <div class="flex items-center mt-12 gap-10">
-          <button
-            class="vibrate-rotate-button rounded-[41px] md:px-12 md:py-4 px-8 py-3 md:text-[18px] font-semibold"
-          >
-            View our work
-          </button>
-          <a
-            class="hover-underline-animation md:text-[16px] text-[14px] font-medium"
-            style="color: rgba(255, 255, 255, 1)"
-            href="#"
-            >View Pricing &#8594;</a
-          >
-        </div>
-      </div>
-      <img src="../../public/main_pic.svg" alt="" />
+  <div
+    class="blurred-background flex px-[3%] md:py-[1%] py-[3%] w-full justify-between items-center fixed z-20"
+  >
+    <a href="#"
+      ><img class="w-[80%]" src="../../public/logo.svg" alt="LOGO"
+    /></a>
+    <div class="flex gap-10 items-center">
+      <a
+        class="hidden md:block hover-underline-animation font-medium text-[16px] text-white"
+        v-for="(item, index) in menu"
+        :key="index"
+        href="#"
+        >{{ item }}</a
+      >
+      <button
+        class="vibrate-button font-medium text-[16px] text-white md:px-10 md:py-[14px] py-[10px] px-6 rounded-[41px]"
+      >
+        Contact us
+      </button>
     </div>
   </div>
 </template>
