@@ -120,8 +120,8 @@ const hamburger = () => {
 
 .menuBlur {
   background: rgba(28, 30, 83, 0.5);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .hover-underline-animation {
