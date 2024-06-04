@@ -11,23 +11,34 @@ const imgs = ref([
 
 const getClassForIndex = (index) => {
   if (index === 0) {
-    return "one col-span-2 row-span-2";
+    return "col-span-2 row-span-2";
   } else if (index === 2) {
-    return "two row-span-1 col-span-1";
+    return "col-span-1";
   } else if (index === 4) {
-    return "three row-span-1 col-span-1";
-  } else if (index === 1) {
-    return "four col-span-1 row-span-2 duration-300 absolute -left-full";
+    return "col-span-1";
   } else {
-    return "five row-span-1 col-span-1 absolute duration-300 -right-full";
+    return "hidden";
   }
 };
+
+const getClassForIndexImg = (index) => {
+  if (index === 1) {
+    return "group-hover:left-0 -left-full";
+  } else if (index === 3) {
+    return "group-hover:right-0 -right-full";
+  } else {
+    return "";
+  }
+}
 </script>
 
 <template>
   <div class="flex flex-wrap px-[3%] mt-[57px] mb-[128px]">
     <div class="flex w-full justify-between items-center mb-4">
-      <h2 class="font-semibold text-xl md:text-[40px]" style="color: rgba(40, 41, 56, 1)">
+      <h2
+        class="font-semibold text-xl md:text-[40px]"
+        style="color: rgba(40, 41, 56, 1)"
+      >
         View our projects
       </h2>
       <a
@@ -36,42 +47,16 @@ const getClassForIndex = (index) => {
         >View Pricing &#8594;</a
       >
     </div>
-    <div
-      class="overflow-hidden grid md:grid-cols-3 grid-rows-2 gap-[2%] w-full relative mt-[64px]"
-    >
-      <img
+    <div class="overflow-hidden grid md:grid-cols-3 grid-rows-2 gap-[2%] w-full mt-[64px] relative">
+      <div
         v-for="(item, index) in imgs"
         :key="index"
-        :src="item"
-        alt=""
-        :class="getClassForIndex(index)"
-      />
-      <div
-        class="text_one -left-full duration-300 absolute z-25 w-[313px] bottom-[76px]"
+        :class="['relative', 'group', getClassForIndex(index)]"
       >
-        <h4 class="text-white leading-[36px] text-2xl font-semibold">
-          Workhub office Webflow Webflow Design
-        </h4>
-        <p class="mt-4 text-white leading-[28px] mb-12">
-          Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam
-        </p>
-        <a
-          class="hover-underline-animation orange text-[16px] font-medium text-[#FCD980]"
-          href="#"
-          >View Pricing &#8594;
-        </a>
-      </div>
-      <div
-        class="text_two -right-full duration-300 absolute z-25 w-[313px] pr-[2%] top-[22%]"
-      >
-        <h4 class="text-white leading-[36px] text-2xl font-semibold mb-[10px]">
-          Unisaas Website Design
-        </h4>
-        <a
-          class="hover-underline-animation orange text-[16px] font-medium text-[#FCD980]"
-          href="#"
-          >View Pricing &#8594;</a
-        >
+        <img class="w-full" :src="item" alt="" />
+        <div v-if="index === 1 || index === 3" class="absolute top-0 w-full h-full z-10">
+          <img class="w-full h-full object-cover duration-300" :class="getClassForIndexImg(index)" :src="item" alt="" />
+        </div>
       </div>
     </div>
   </div>
@@ -104,31 +89,21 @@ const getClassForIndex = (index) => {
   background: #fcd980;
 }
 
-.four:hover ~ .text_one,
-.text_one:hover {
-  left: 48px;
+.group-hover\:left-0 {
+  left: 0 !important;
 }
 
-.five:hover ~ .text_two,
-.text_two:hover {
-  right: 36px;
+.group-hover\:right-0 {
+  right: 0 !important;
 }
 
-.one:hover ~ .four,
-.four:hover {
-  left: 0;
-  top: 0;
+.group-hover\:left-0,
+.group-hover\:right-0 {
+  transition: all 0.3s ease;
 }
 
-.text_one:hover ~ .four,
-.four:hover {
-  left: 0;
-  top: 0;
-}
-
-.two:hover ~ .five,
-.five:hover {
-  right: 0;
-  top: 0;
+.group .group-hover\:left-0,
+.group .group-hover\:right-0 {
+  transition: all 0.3s ease;
 }
 </style>
