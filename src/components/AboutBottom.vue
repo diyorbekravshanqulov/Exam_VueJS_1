@@ -15,7 +15,6 @@ const getLink = (index) => {
     return "https://linkedin.com";
   }
 };
-
 </script>
 <template>
   <div class="w-full px-[3%] py-[128px] text-blackBlue">
@@ -32,16 +31,14 @@ const getLink = (index) => {
             alt=""
           />
           <div
-            class="top-full flex duration-300 absolute left-1/2 -translate-x-1/2 group-hover:top-1/2 translate-y-8"
+            class="top-full flex duration-300 gap-4 absolute left-1/2 -translate-x-1/2 group-hover:top-1/2 translate-y-8"
           >
-            <a :href="getLink(index)" v-for="(item, index) in images" :key="index" target="_blank"
-              ><img
-                v-for="(item_logo, index_logo) in logo"
-                :key="index_logo"
-                :src="item_logo"
-                alt=""
-                class="w-full"
-              />
+            <a
+              :href="getLink(index_logo)"
+              v-for="(item_logo, index_logo) in logo"
+              :key="index_logo"
+              target="_blank"
+              ><img :src="item_logo" alt="" class="w-full" />
             </a>
           </div>
         </div>
