@@ -33,7 +33,7 @@ const images = ref([
           presence and help with your UX/UI design challenges.
         </p>
         <div class="flex gap-[27px] items-center">
-          <a href="" v-for="(item, index) in images">
+          <a href="#" v-for="(item, index) in images">
             <img :key="index" :src="item" alt="logo_social" />
           </a>
         </div>
