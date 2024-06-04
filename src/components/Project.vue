@@ -14,12 +14,12 @@ const getClassForIndex = (index) => {
     return "one col-span-2 row-span-2";
   } else if (index === 2) {
     return "two row-span-1 col-span-1";
-  } else if (index == 4) {
+  } else if (index === 4) {
     return "three row-span-1 col-span-1";
-  } else if (index == 1) {
-    return "col-span-1 row-span-2 absolute left-0 top-0";
+  } else if (index === 1) {
+    return "four col-span-1 row-span-2 duration-300 absolute -left-full";
   } else {
-    return "row-span-1 col-span-1 absolute top-0 right-0";
+    return "five row-span-1 col-span-1 absolute duration-300 -right-full";
   }
 };
 </script>
@@ -36,7 +36,9 @@ const getClassForIndex = (index) => {
         >View Pricing &#8594;</a
       >
     </div>
-    <div class="grid grid-cols-3 grid-rows-2 gap-[2%] w-full relative mt-[64px]">
+    <div
+      class="overflow-hidden grid grid-cols-3 grid-rows-2 gap-[2%] w-full relative mt-[64px]"
+    >
       <img
         v-for="(item, index) in imgs"
         :key="index"
@@ -44,7 +46,9 @@ const getClassForIndex = (index) => {
         alt=""
         :class="getClassForIndex(index)"
       />
-      <div class="absolute z-30 w-[313px] bottom-[76px] left-12">
+      <div
+        class="text_one -left-full duration-300 absolute z-25 w-[313px] bottom-[76px]"
+      >
         <h4 class="text-white leading-[36px] text-2xl font-semibold">
           Workhub office Webflow Webflow Design
         </h4>
@@ -57,7 +61,9 @@ const getClassForIndex = (index) => {
           >View Pricing &#8594;
         </a>
       </div>
-      <div class="absolute z-30 w-[313px] pr-[2%] top-[22%] right-9">
+      <div
+        class="text_two -right-full duration-300 absolute z-25 w-[313px] pr-[2%] top-[22%]"
+      >
         <h4 class="text-white leading-[36px] text-2xl font-semibold mb-[10px]">
           Unisaas Website Design
         </h4>
@@ -74,7 +80,6 @@ const getClassForIndex = (index) => {
 <style scoped>
 .hover-underline-animation {
   position: relative;
-  /* color: white; */
   text-decoration: none;
 }
 
@@ -86,18 +91,44 @@ const getClassForIndex = (index) => {
   display: block;
   margin-top: 5px;
   right: 0;
-  background: white;
+  background: #282938;
   transition: width 0.3s ease;
 }
 
 .hover-underline-animation:hover::after {
   width: 100%;
   left: 0;
-  /* background: white; */
-  background: #282938;
 }
 
 .orange:hover::after {
   background: #fcd980;
+}
+
+.four:hover ~ .text_one,
+.text_one:hover {
+  left: 48px;
+}
+
+.five:hover ~ .text_two,
+.text_two:hover {
+  right: 36px;
+}
+
+.one:hover ~ .four,
+.four:hover {
+  left: 0;
+  top: 0;
+}
+
+.text_one:hover ~ .four,
+.four:hover {
+  left: 0;
+  top: 0;
+}
+
+.two:hover ~ .five,
+.five:hover {
+  right: 0;
+  top: 0;
 }
 </style>
