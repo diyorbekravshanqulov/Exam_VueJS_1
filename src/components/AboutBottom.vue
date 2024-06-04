@@ -24,17 +24,17 @@ const getLink = (index) => {
     <div class="md:flex mt-12 w-full justify-between">
       <div class="py-12 md:px-16" v-for="(item, index) in images" :key="index">
         <div class="relative group overflow-hidden rounded-full max-md:flex max-md:justify-center">
-          <img class="rounded-full" :src="item" alt="" />
+          <img class="rounded-full max-md:w-full" :src="item" alt="" />
           <img
-            class="top-full duration-300 absolute left-0 group-hover:top-0"
+            class="top-full max-md:w-full duration-300 absolute left-0 group-hover:top-0 max-md:left-1/2 max-md:-translate-x-1/2"
             src="../../public/aboutHover.svg"
             alt=""
           />
           <div
-            class="top-full flex duration-300 gap-4 absolute left-1/2 -translate-x-1/2 group-hover:top-1/2 translate-y-9"
+            class="top-full max-md:w-[45%] flex duration-300 gap-4 absolute left-1/2 -translate-x-1/2 group-hover:top-1/2 translate-y-[200%] md:translate-y-9"
           >
             <a
-              :href="getLink(index_logo)"
+              :href="getLink(index_logo)" class="max-md:w-full"
               v-for="(item_logo, index_logo) in logo"
               :key="index_logo"
               target="_blank"
