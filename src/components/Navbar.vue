@@ -23,18 +23,22 @@ const link = (index) => {
   } else if (index === 4) {
     return "/blog";
   }
-  return "/contact";
+  return "contact";
 };
 
 const hamburger = () => {
   const back = document.getElementById("back");
   const hambur = document.getElementById("hambur");
+  const hamMenu = document.getElementById("hamMenu");
 
   // Toggle visibility of "back" element
   if (back.style.display === "none") {
+    hamMenu.style.background = "#1C1E53"
+    // hamMenu.style.background = "black"
     back.style.display = "block";
   } else {
     back.style.display = "none";
+    hamMenu.style.background = "unset"
   }
 
   // Toggle visibility of "hambur" element
@@ -47,14 +51,19 @@ const hamburger = () => {
 </script>
 
 <template>
-  <div class="blurred-background flex px-[3%] md:py-[1%] py-[3%] w-full justify-between items-center fixed z-20">
-    <a href="#"><img class="w-[80%]" src="../../public/logo.svg" alt="LOGO" /></a>
+  <div id="hamMenu"
+    class="blurred-background flex px-[3%] md:py-[1%] py-[3%] w-full justify-between items-center fixed z-30"
+  >
+    <a href="#"
+      ><img class="w-[80%]" src="../../public/logo.svg" alt="LOGO"
+    /></a>
     <div class="flex gap-10 items-center">
       <router-link
         :to="link(index)"
         class="hidden md:block hover-underline-animation font-medium text-[16px] text-white"
         v-for="(item, index) in menu"
         :key="index"
+        href="#"
         >{{ item }}</router-link
       >
       <router-link
@@ -76,15 +85,17 @@ const hamburger = () => {
   <div
     id="back"
     @click="hamburger()"
-    class="menuBlur w-screen h-screen top-0 left-0 fixed z-60 hidden"
-  ></div>
+    class="w-screen h-screen hidden menuBlur right-0 top-0  fixed z-20"
+  >
+</div>
+
   <div
     id="hambur"
-    class="w-[70%] hidden bg-blueBox right-0 px-[10%] flex-col gap-6 py-[10%] items-start fixed z-20 shadow-2xl shadow-[#1C1E53]"
+    class="w-[70%] hidden bg-blueBox right-0 px-[10%] flex-col gap-6 py-[10%] items-start fixed z-40 shadow-2xl shadow-[#1C1E53]"
   >
     <button
       @click="hamburger()"
-      class="md:hidden flex justify-center items-center text-5xl text-white mb-2 "
+      class="md:hidden flex justify-center items-center text-5xl text-white mb-2"
     >
       <span class="text-2xl">|</span>&gt;
     </button>
@@ -94,6 +105,7 @@ const hamburger = () => {
       class="md:block hover-underline-animation phone font-medium text-[16px] py-1 first:pt-3"
       v-for="(item, index) in menu_hambur"
       :key="index"
+      href="#"
       >{{ item }}</router-link
     >
   </div>
@@ -102,7 +114,7 @@ const hamburger = () => {
 <style scoped>
 .blurred-background {
   background: rgba(28, 30, 83, 0.5);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px); /* Adjust the blur value as needed */
   -webkit-backdrop-filter: blur(15px);
 }
 
@@ -152,6 +164,50 @@ const hamburger = () => {
 
 .vibrate-button:hover {
   border-color: white;
+  animation: vibrate 0.3s linear infinite, rotate 0.3s linear infinite;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, -2px);
+  }
+  40% {
+    transform: translate(2px, -2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(2px, 2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.vibrate-rotate-button {
+  background: rgba(252, 217, 128, 1);
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.vibrate-rotate-button:hover {
+  background-color: rgba(252, 217, 128, 0.8); /* Adjust this color as needed */
   animation: vibrate 0.3s linear infinite, rotate 0.3s linear infinite;
 }
 
