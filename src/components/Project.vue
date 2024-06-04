@@ -30,11 +30,13 @@ const getClassForIndex = (index) => {
       <h2 class="font-semibold text-[40px]" style="color: rgba(40, 41, 56, 1)">
         View our projects
       </h2>
-      <a class="hover-underline-animation text-[16px] font-medium text-[#282938]" href="#"
+      <a
+        class="hover-underline-animation text-[16px] font-medium text-[#282938]"
+        href="#"
         >View Pricing &#8594;</a
       >
     </div>
-    <div class="grid grid-cols-3 grid-rows-2 gap-6 w-full relative mt-[64px]">
+    <div class="grid grid-cols-3 grid-rows-2 gap-[2%] w-full relative mt-[64px]">
       <img
         v-for="(item, index) in imgs"
         :key="index"
@@ -42,6 +44,29 @@ const getClassForIndex = (index) => {
         alt=""
         :class="getClassForIndex(index)"
       />
+      <div class="absolute z-30 w-[313px] bottom-[76px] left-12">
+        <h4 class="text-white leading-[36px] text-2xl font-semibold">
+          Workhub office Webflow Webflow Design
+        </h4>
+        <p class="mt-4 text-white leading-[28px] mb-12">
+          Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam
+        </p>
+        <a
+          class="hover-underline-animation orange text-[16px] font-medium text-[#FCD980]"
+          href="#"
+          >View Pricing &#8594;
+        </a>
+      </div>
+      <div class="absolute z-30 w-[313px] pr-[2%] top-[22%] right-9">
+        <h4 class="text-white leading-[36px] text-2xl font-semibold mb-[10px]">
+          Unisaas Website Design
+        </h4>
+        <a
+          class="hover-underline-animation orange text-[16px] font-medium text-[#FCD980]"
+          href="#"
+          >View Pricing &#8594;</a
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -70,5 +95,9 @@ const getClassForIndex = (index) => {
   left: 0;
   /* background: white; */
   background: #282938;
+}
+
+.orange:hover::after {
+  background: #fcd980;
 }
 </style>
