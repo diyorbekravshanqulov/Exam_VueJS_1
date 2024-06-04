@@ -29,16 +29,15 @@ const link = (index) => {
 const hamburger = () => {
   const back = document.getElementById("back");
   const hambur = document.getElementById("hambur");
-  const hamMenu = document.getElementById("hamMenu");
+  const hamMenu = document.getElementById("hamMenu"); // Assuming you have an element with this ID
 
-  // Toggle visibility of "back" element
   if (back.style.display === "none") {
-    hamMenu.style.background = "#1C1E53"
-    // hamMenu.style.background = "black"
+    hamMenu.style.background = "#1C1E53";
+    // hamMenu.style.background = "darkblue";
     back.style.display = "block";
   } else {
     back.style.display = "none";
-    hamMenu.style.background = "unset"
+    hamMenu.style.background = "unset";
   }
 
   // Toggle visibility of "hambur" element
@@ -48,6 +47,7 @@ const hamburger = () => {
     hambur.style.display = "none";
   }
 };
+
 </script>
 
 <template>
