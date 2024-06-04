@@ -48,7 +48,7 @@ const parag = ref([
       <div
         v-for="(item, index) in h6"
         :key="index"
-        class="px-12 py-11 bg-white hover:shadow-xl"
+        class="px-12 py-11 bg-white duration-300 hover:shadow-xl"
       >
         <img :src="func(index)" alt="" />
         <!-- Adjust index -->
