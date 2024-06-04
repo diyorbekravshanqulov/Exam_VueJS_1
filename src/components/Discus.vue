@@ -42,8 +42,8 @@ const parag = ref([
     >
       Design that solves problems, one product at a time
     </h2>
-    <div class="grid grid-cols-3 grid-rows-2 gap-8 px-[38px] py[48px] mt-[47px]">
-      <div v-for="(item, index) in h6" :key="index" class="p-12">
+    <div class="grid grid-cols-3 grid-rows-2 gap-8 px-[38px] py[48px] mt-[47px] mb-[128px]">
+      <div v-for="(item, index) in h6" :key="index" class="p-12 bg-white">
         <img :src="func(index)" alt="" :class="func()"/>
         <!-- Adjust index -->
         <h6
