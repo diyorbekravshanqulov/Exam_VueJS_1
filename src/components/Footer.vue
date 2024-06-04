@@ -44,7 +44,7 @@ const getLink = (index) => {
         </div>
       </div>
     </div>
-    <div class="md:w-0 w-full md:py-4 md:pr-[137px] py-2 md:mt-0 mt-10 md:pl-[37px] px-5 flex items-center gap-[29px] bg-[#FCD980] text-[#282938]">
+    <div class="max-md:w-full md:py-4 md:pr-[137px] py-2 md:mt-0 mt-10 md:pl-[37px] px-5 flex items-center gap-[29px] bg-[#FCD980] text-[#282938]">
       <div>
         <h5 class="leading-[32px] text-[12px] md:text-[18px] font-medium">Email me at</h5>
         <p class="md:mt-1 md:text-[16px] text-[12px] leading-[28px]">contact@website.com</p>
