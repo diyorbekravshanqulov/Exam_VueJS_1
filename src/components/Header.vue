@@ -54,9 +54,9 @@ const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
 
 <style scoped>
 .blurred-background {
-  background: rgba(28, 30, 83, 0.9);
-  backdrop-filter: blur(10px); /* Adjust the blur value as needed */
-  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  background: rgba(28, 30, 83, 0.5);
+  backdrop-filter: blur(15px); /* Adjust the blur value as needed */
+  -webkit-backdrop-filter: blur(15px); /* For Safari support */
 }
 
 .hover-underline-animation {
