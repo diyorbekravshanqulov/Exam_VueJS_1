@@ -37,7 +37,9 @@ const hamburger = () => {
     back.style.display = "block";
   } else {
     back.style.display = "none";
-    hamMenu.style.background = "unset";
+    hamMenu.style.background = "rgba(28, 30, 83, 0.8)";
+    hamMenu.style.backdropFilter = "blur(30px)";
+    hamMenu.style.webkitBackdropFilter = "blur(30px)";
   }
 
   // Toggle visibility of "hambur" element
