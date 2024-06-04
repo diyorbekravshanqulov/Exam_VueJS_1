@@ -1,17 +1,17 @@
 <script setup>
 import { ref } from "vue";
 
-const imgs = ref(["text-logo1.svg", "text-logo2.svg", "text-logo3.svg"]);
+const imgs = ref([
+  "text-logo1.svg",
+  "text-logo2.svg",
+  "text-logo3.svg",
+  "text-logo1.svg",
+  "text-logo2.svg",
+  "text-logo3.svg",
+]);
 
 const func = (index) => {
-  if (index == 2) {
-    return imgs.value[0];
-  } else if (index == 3) {
-    return imgs.value[1];
-  } else if (index == 4) {
-    return imgs.value[2];
-  }
-  return "h-[35px]"
+  return imgs.value[index]
 };
 
 const h6 = ref([
@@ -32,7 +32,7 @@ const parag = ref([
   <div class="flex justify-center flex-wrap px-[3%] mt-[57px] bg-[#F4F6FC]">
     <p
       class="font-medium text-[16px] text-center mt-[128px]"
-      style="color: rgba(40, 41,w 56, 1)"
+      style="color: rgba(40, 41, w 56, 1)"
     >
       Features
     </p>
@@ -42,20 +42,20 @@ const parag = ref([
     >
       Design that solves problems, one product at a time
     </h2>
-    <div class="grid md:grid-cols-3 grid-rows-2 gap-8 md:px-[38px] px-[14px] py[48px] mt-[47px] md:mb-[128px] pb-[64px]">
-      <div v-for="(item, index) in h6" :key="index" class="px-12 py-11 bg-white">
-        <img :src="func(index)" alt="" :class="func()"/>
+    <div
+      class="grid md:grid-cols-3 grid-rows-2 gap-8 md:px-[38px] px-[14px] py[48px] mt-[47px] md:mb-[128px] pb-[64px]"
+    >
+      <div
+        v-for="(item, index) in h6"
+        :key="index"
+        class="px-12 py-11 bg-white"
+      >
+        <img :src="func(index)" alt="" />
         <!-- Adjust index -->
-        <h6
-          class="text-2xl mt-[25px]"
-          style="color: rgba(40, 41, 56, 1)"
-        >
+        <h6 class="text-2xl mt-[25px]" style="color: rgba(40, 41, 56, 1)">
           {{ item }}
         </h6>
-        <p
-          class="mt-3 text-[16px]"
-          style="color: rgba(40, 41, 56, 1)"
-        >
+        <p class="mt-3 text-[16px]" style="color: rgba(40, 41, 56, 1)">
           {{ parag[0] }}
         </p>
         <!-- Access the first element of the 'parag' array -->
