@@ -47,11 +47,11 @@ const hamburger = () => {
     hambur.style.display = "none";
   }
 };
-
 </script>
 
 <template>
-  <div id="hamMenu"
+  <div
+    id="hamMenu"
     class="blurred-background flex px-[3%] md:py-[1%] py-[3%] w-full justify-between items-center fixed z-30"
   >
     <a href="#"
@@ -85,9 +85,8 @@ const hamburger = () => {
   <div
     id="back"
     @click="hamburger()"
-    class="w-screen h-screen hidden menuBlur right-0 top-0  fixed z-20"
-  >
-</div>
+    class="w-screen h-screen hidden menuBlur right-0 top-0 fixed z-20"
+  ></div>
 
   <div
     id="hambur"
@@ -116,6 +115,14 @@ const hamburger = () => {
   background: rgba(28, 30, 83, 0.5);
   backdrop-filter: blur(15px); /* Adjust the blur value as needed */
   -webkit-backdrop-filter: blur(15px);
+}
+
+@media (max-width: 768px) {
+  .blurred-background {
+    background: rgba(28, 30, 83, 0.8);
+    backdrop-filter: blur(30px); /* Adjust the blur value as needed */
+    -webkit-backdrop-filter: blur(30px);
+  }
 }
 
 .menuBlur {
