@@ -7,6 +7,10 @@ const images = ref([
   "/insta.svg",
   "/linkdIn.svg",
 ]);
+
+
+
+
 </script>
 <template>
   <div
@@ -29,12 +33,9 @@ const images = ref([
           presence and help with your UX/UI design challenges.
         </p>
         <div class="flex gap-[27px] items-center">
-          <img
-            v-for="(item, index) in images"
-            :key="index"
-            :src="item"
-            alt="logo_social"
-          />
+          <a href="" v-for="(item, index) in images">
+            <img :key="index" :src="item" alt="logo_social" />
+          </a>
         </div>
       </div>
     </div>
