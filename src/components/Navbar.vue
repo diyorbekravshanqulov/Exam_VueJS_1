@@ -2,6 +2,14 @@
 import { ref } from "vue";
 
 const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
+const menu_hambur = ref([
+  "Home",
+  "About us",
+  "Pricing",
+  "Work",
+  "Blog",
+  "Contact us",
+]);
 
 const link = (index) => {
   if (index === 0) {
@@ -15,13 +23,13 @@ const link = (index) => {
   } else if (index === 4) {
     return "/blog";
   }
-  return "contact";
+  // return "contact";
 };
 
 // window.pageXOffset == window.scrollX; // always true
 // window.pageYOffset == window.scrollY; // always true
 
-// let top = ref(this.scrollY); 
+// let top = ref(this.scrollY);
 
 // window.addEventListener(
 //   "scroll",
@@ -30,10 +38,30 @@ const link = (index) => {
 //       const navbar = document.querySelector(".blurred-background")
 //       navbar.classList.add("background: rgba(28, 30, 83, 1);")
 //     }
-    
+
 //   },
 //   false
 // );
+
+const hamburger = () => {
+  const back = document.getElementById("back");
+  const hambur = document.getElementById("hambur");
+
+  // Toggle visibility of "back" element
+  if (back.style.display === "none") {
+    back.style.display = "block";
+  } else {
+    back.style.display = "none";
+  }
+
+  // Toggle visibility of "hambur" element
+  if (hambur.style.display === "none") {
+    hambur.style.display = "flex";
+  } else {
+    hambur.style.display = "none";
+  }
+};
+
 </script>
 
 <template>
@@ -53,12 +81,33 @@ const link = (index) => {
         >{{ item }}</router-link
       >
       <router-link
-        :to="link(5)"
-        class="vibrate-button font-medium text-[16px] text-white md:px-10 md:py-[14px] py-[10px] px-6 rounded-[41px]"
-      >
-        Contact us
-      </router-link>
+      :to="link(5)"
+      class="vibrate-button md:block hidden font-medium text-[16px] text-white md:px-10 md:py-[14px] py-[10px] px-6 rounded-[41px]"
+      > 
+      Contact us
+    </router-link>
+    
+      <button @click="hamburger()" class="md:hidden block text-4xl text-white mb-2">&lt;</button>
     </div>
+  </div>
+
+  <div
+    id="back"  @click="hamburger()"
+    class="menuBlur w-screen h-screen top-0 left-0 fixed z-60"
+  ></div>
+  <div
+    id="hambur"
+    class="w-1/3 hidden bg-blueBox right-0 px-[3%] flex-col gap-4 py-[2%] items-start fixed z-20 shadow-2xl shadow-[#1C1E53]"
+  >
+  <button @click="hamburger()" class="text-4xl text-white mb-2">&gt;</button>
+    <router-link
+      :to="link(index)"
+      class="hidden md:block hover-underline-animation phone font-medium text-[16px] py-1 first:pt-3"
+      v-for="(item, index) in menu_hambur"
+      :key="index"
+      href="#"
+      >{{ item }}</router-link
+    >
   </div>
 </template>
 
@@ -66,7 +115,13 @@ const link = (index) => {
 .blurred-background {
   background: rgba(28, 30, 83, 0.5);
   backdrop-filter: blur(15px); /* Adjust the blur value as needed */
-  -webkit-backdrop-filter: blur(15px); /* For Safari support */
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.menuBlur {
+  background: rgba(28, 30, 83, 0.5);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
 
 .hover-underline-animation {
@@ -91,6 +146,14 @@ const link = (index) => {
   width: 100%;
   left: 0;
   background: white;
+}
+
+.phone::after {
+  width: 100%;
+}
+
+.phone:hover::after {
+  width: 0;
 }
 
 .vibrate-button {

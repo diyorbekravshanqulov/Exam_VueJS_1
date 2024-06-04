@@ -8,7 +8,8 @@ export default {
       },
       colors: {
         blackBlue: "#282938",
-      }
+        blueBox: "#1C1E53",
+      },
     },
   },
   plugins: [],

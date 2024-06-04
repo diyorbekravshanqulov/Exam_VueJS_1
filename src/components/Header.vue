@@ -17,11 +17,11 @@
           >
             View our work
           </button>
-          <a
+          <af
             class="hover-underline-animation md:text-[16px] text-[14px] font-medium"
             style="color: rgba(255, 255, 255, 1)"
             href="#"
-            >View Pricing &#8594;</a
+            >View Pricing &#8594;</af
           >
         </div>
       </div>
