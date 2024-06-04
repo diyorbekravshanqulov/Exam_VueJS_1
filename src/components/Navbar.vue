@@ -91,7 +91,7 @@ const hamburger = () => {
 
   <div
     id="hambur"
-    class="w-[70%] hidden bg-blueBox right-0 px-[10%] flex-col gap-6 py-[10%] items-start fixed z-40 shadow-2xl shadow-[#1C1E53]"
+    class="w-[65%] hidden bg-blueBox right-0 px-[10%] flex-col gap-6 py-[10%] items-start fixed z-40 shadow-2xl shadow-[#1C1E53]"
   >
     <button
       @click="hamburger()"
@@ -102,7 +102,7 @@ const hamburger = () => {
     <router-link
       @click="hamburger()"
       :to="link(index)"
-      class="md:block hover-underline-animation phone font-medium text-[16px] py-1 first:pt-3"
+      class="md:block hover-underline-animation phone font-medium text-xl py-1 first:pt-3"
       v-for="(item, index) in menu_hambur"
       :key="index"
       href="#"
