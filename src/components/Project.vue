@@ -27,7 +27,7 @@ const getClassForIndex = (index) => {
 <template>
   <div class="flex flex-wrap px-[3%] mt-[57px] mb-[128px]">
     <div class="flex w-full justify-between items-center mb-4">
-      <h2 class="font-semibold text-2xl md:text-[40px]" style="color: rgba(40, 41, 56, 1)">
+      <h2 class="font-semibold text-xl md:text-[40px]" style="color: rgba(40, 41, 56, 1)">
         View our projects
       </h2>
       <a
