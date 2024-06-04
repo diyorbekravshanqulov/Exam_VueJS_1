@@ -88,9 +88,9 @@ const hamburger = () => {
 
       <button
         @click="hamburger()"
-        class="md:hidden block text-4xl text-white mb-2"
+        class="md:hidden flex justify-center items-center text-5xl text-white mb-2 px-4"
       >
-        &lt;
+        &lt;<span class="text-3xl">|</span>
       </button>
     </div>
   </div>
@@ -102,9 +102,14 @@ const hamburger = () => {
   ></div> -->
   <div
     id="hambur"
-    class="w-1/2 hidden bg-blueBox right-0 px-[5%] flex-col gap-4 py-[4%] items-start fixed z-20 shadow-2xl shadow-[#1C1E53]"
+    class="w-[70%] hidden bg-blueBox right-0 px-[10%] flex-col gap-6 py-[10%] items-start fixed z-20 shadow-2xl shadow-[#1C1E53]"
   >
-    <button @click="hamburger()" class="text-4xl text-white mb-1">&gt;</button>
+    <button
+        @click="hamburger()"
+        class="md:hidden flex justify-center items-center text-5xl text-white mb-2 "
+      >
+        <span class="text-2xl">|</span>&gt;
+      </button>
     <router-link
       @click="hamburger()"
       :to="link(index)"
