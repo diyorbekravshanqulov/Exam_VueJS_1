@@ -34,12 +34,12 @@ const getLink = (index) => {
         <h2 class="text-white text-start leading-[64px] font-semibold text-[40px]">
           Lets Talk!
         </h2>
-        <p class="mt-[14px] text-[#F4F6FC] leading-[28px] mb-7">
+        <p class="mt-[14px] text-[#F4F6FC] leading-[28px] md:mb-7 max-md:mb-10">
           We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.
         </p>
-        <div class="flex gap-[27px] items-center">
-          <a :href="getLink(index)" v-for="(item, index) in images" :key="index" target="_blank">
-            <img :src="item" alt="logo_social" /> 
+        <div class="flex md:gap-[27px] items-center max-md:w-full max-md:justify-between">
+          <a class="max-md:w-full" :href="getLink(index)" v-for="(item, index) in images" :key="index" target="_blank">
+            <img class="max-md:w-1/3 max-md:mx-auto" :src="item" alt="logo_social" /> 
           </a>
         </div>
       </div>
