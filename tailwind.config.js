@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         pop: ["Poppins", "sans-serif"], // Make sure to include a fallback font
       },
+      colors: {
+        blackBlue: "#282938",
+      }
     },
   },
   plugins: [],
