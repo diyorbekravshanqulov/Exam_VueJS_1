@@ -14,7 +14,7 @@
     </div>
     <div class="col-span-2">
       <h5
-        class="md:text-[32px] text-[24px] font-medium md:leading-[48px] leading-[40px]"
+        class="md:text-[32px] text-[24px] font-medium md:leading-[48px] leading-[36px]"
         style="color: rgba(40, 41, 56, 1)"
       >
         "The best agency we’ve worked with so far. They understand our product
