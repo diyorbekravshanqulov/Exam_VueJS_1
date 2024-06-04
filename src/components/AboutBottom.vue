@@ -31,7 +31,7 @@ const getLink = (index) => {
             alt=""
           />
           <div
-            class="top-full flex duration-300 gap-4 absolute left-1/2 -translate-x-1/2 group-hover:top-1/2 translate-y-8"
+            class="top-full flex duration-300 gap-4 absolute left-1/2 -translate-x-1/2 group-hover:top-1/2 translate-y-9"
           >
             <a
               :href="getLink(index_logo)"
