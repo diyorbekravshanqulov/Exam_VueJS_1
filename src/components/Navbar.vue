@@ -23,7 +23,7 @@ const link = (index) => {
   } else if (index === 4) {
     return "/blog";
   }
-  // return "contact";
+  return "contact";
 };
 
 // window.pageXOffset == window.scrollX; // always true
@@ -44,15 +44,15 @@ const link = (index) => {
 // );
 
 const hamburger = () => {
-  const back = document.getElementById("back");
+  // const back = document.getElementById("back");
   const hambur = document.getElementById("hambur");
 
-  // Toggle visibility of "back" element
-  if (back.style.display === "none") {
-    back.style.display = "block";
-  } else {
-    back.style.display = "none";
-  }
+  // // Toggle visibility of "back" element
+  // if (back.style.display === "none") {
+  //   back.style.display = "block";
+  // } else {
+  //   back.style.display = "none";
+  // }
 
   // Toggle visibility of "hambur" element
   if (hambur.style.display === "none") {
@@ -61,7 +61,6 @@ const hamburger = () => {
     hambur.style.display = "none";
   }
 };
-
 </script>
 
 <template>
@@ -81,26 +80,33 @@ const hamburger = () => {
         >{{ item }}</router-link
       >
       <router-link
-      :to="link(5)"
-      class="vibrate-button md:block hidden font-medium text-[16px] text-white md:px-10 md:py-[14px] py-[10px] px-6 rounded-[41px]"
-      > 
-      Contact us
-    </router-link>
-    
-      <button @click="hamburger()" class="md:hidden block text-4xl text-white mb-2">&lt;</button>
+        :to="link(5)"
+        class="vibrate-button md:block hidden font-medium text-[16px] text-white md:px-10 md:py-[14px] py-[10px] px-6 rounded-[41px]"
+      >
+        Contact us
+      </router-link>
+
+      <button
+        @click="hamburger()"
+        class="md:hidden block text-4xl text-white mb-2"
+      >
+        &lt;
+      </button>
     </div>
   </div>
 
-  <div
-    id="back"  @click="hamburger()"
+  <!-- <div
+    id="back"
+    @click="hamburger()"
     class="menuBlur w-screen h-screen top-0 left-0 fixed z-60"
-  ></div>
+  ></div> -->
   <div
     id="hambur"
     class="w-1/2 hidden bg-blueBox right-0 px-[5%] flex-col gap-4 py-[4%] items-start fixed z-20 shadow-2xl shadow-[#1C1E53]"
   >
-  <button @click="hamburger()" class="text-4xl text-white mb-1">&gt;</button>
+    <button @click="hamburger()" class="text-4xl text-white mb-1">&gt;</button>
     <router-link
+      @click="hamburger()"
       :to="link(index)"
       class="md:block hover-underline-animation phone font-medium text-[16px] py-1 first:pt-3"
       v-for="(item, index) in menu_hambur"
