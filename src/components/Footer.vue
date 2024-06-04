@@ -23,7 +23,7 @@ const getLink = (index) => {
 
 <template>
   <div class="flex justify-start flex-wrap px-[3%] mt-[57px] py-[96px] bg-[#1C1E53]">
-    <div class="flex gap-[260px]">
+    <div class="md:flex gap-[260px]">
       <div>
         <img src="../../public/logo.svg" alt="Company Logo" />
         <p class="mt-[23px] text-white leading-[28px] font-medium">
@@ -44,7 +44,7 @@ const getLink = (index) => {
         </div>
       </div>
     </div>
-    <div class="py-4 pr-[137px] pl-[37px] flex items-center gap-[29px] bg-[#FCD980] text-[#282938]">
+    <div class="md:py-4 md:pr-[137px] py-2 md:mt-0 mt-10 md:pl-[37px] px-5 flex items-center gap-[29px] bg-[#FCD980] text-[#282938]">
       <div>
         <h5 class="leading-[32px] text-[18px] font-medium">Email me at</h5>
         <p class="mt-1 leading-[28px]">contact@website.com</p>

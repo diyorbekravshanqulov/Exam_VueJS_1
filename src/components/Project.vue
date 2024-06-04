@@ -27,17 +27,17 @@ const getClassForIndex = (index) => {
 <template>
   <div class="flex flex-wrap px-[3%] mt-[57px] mb-[128px]">
     <div class="flex w-full justify-between items-center mb-4">
-      <h2 class="font-semibold text-[40px]" style="color: rgba(40, 41, 56, 1)">
+      <h2 class="font-semibold text-2xl md:text-[40px]" style="color: rgba(40, 41, 56, 1)">
         View our projects
       </h2>
       <a
-        class="hover-underline-animation text-[16px] font-medium text-[#282938]"
+        class="hover-underline-animation text-[14px] md:text-[16px] font-medium text-[#282938]"
         href="#"
         >View Pricing &#8594;</a
       >
     </div>
     <div
-      class="overflow-hidden grid grid-cols-3 grid-rows-2 gap-[2%] w-full relative mt-[64px]"
+      class="overflow-hidden grid md:grid-cols-3 grid-rows-2 gap-[2%] w-full relative mt-[64px]"
     >
       <img
         v-for="(item, index) in imgs"

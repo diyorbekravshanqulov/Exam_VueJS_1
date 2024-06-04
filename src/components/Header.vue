@@ -10,7 +10,7 @@ const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
     <a href="#"><img src="../../public/logo.svg" alt="LOGO" /></a>
     <div class="flex gap-10 items-center">
       <a
-        class="hover-underline-animation font-medium text-[16px] text-white"
+        class="hidden md:block hover-underline-animation font-medium text-[16px] text-white"
         v-for="(item, index) in menu"
         :key="index"
         href="#"
@@ -24,18 +24,18 @@ const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
     </div>
   </div>
   <div class="flex flex-wrap px-[3%] bg-[#1C1E53] relative">
-    <div class="mb-[6%] mt-[12%] w-full flex gap-[10%] items-center">
-      <div class="flex flex-wrap">
-        <h1 class="text-white font-semibold text-[54px] leading-[74px]">
+    <div class="mb-[6%] mt-[12%] w-full flex md:flex-nowrap flex-wrap gap-[10%] items-center">
+      <div class="flex flex-wrap md:mb-0 mb-[15%]">
+        <h1 class="text-white md:text-start text-center font-semibold md:text-[54px] text-4xl md:leading-[74px] leading-[55px]">
           Building stellar websites for early startups
         </h1>
-        <p class="text-white mt-6 text-[16px] font-medium">
+        <p class="text-white md:text-start text-center mt-6 text-[16px] font-medium">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.
         </p>
         <div class="flex items-center mt-12 gap-10">
           <button
-            class="vibrate-rotate-button rounded-[41px] px-12 py-4 text-[18px] font-semibold"
+            class="vibrate-rotate-button rounded-[41px] md:px-12 md:py-4 px-10 py-3 text-[18px] font-semibold"
           >
             View our work
           </button>
