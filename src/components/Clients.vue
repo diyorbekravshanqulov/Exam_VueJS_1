@@ -3,12 +3,12 @@
   <div class="grid md:grid-cols-3 px-[3%] gap-[10%] md:mt-[57px] md:py-[128px] py-[64px]">
     <div class="md:col-span-1 col-span-2">
       <h3
-        class="px-[10%] md:px-0 text-[38px] md:text-start text-center font-semibold leading-[56px]"
+        class="text-[38px] md:text-start text-center font-semibold leading-[56px]"
         style="color: rgba(40, 41, 56, 1)"
       >
         What our clients say about us
       </h3>
-      <p class="mt-4" style="color: rgba(40, 41, 56, 1)">
+      <p class="md:mt-4 mt-8" style="color: rgba(40, 41, 56, 1)">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
       </p>
     </div>
