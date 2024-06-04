@@ -26,7 +26,7 @@ const getLink = (index) => {
     <div class="flex md:gap-[260px] gap-14 max-md:flex-wrap ">
       <div>
         <img src="../../public/logo.svg" alt="Company Logo" />
-        <p class="mt-[23px] text-white leading-[28px] font-medium">
+        <p class="mt-[23px] text-white leading-[28px] font-medium max-md:text-justify">
           We are always open to discuss your project and improve your online presence.
         </p>
       </div>
@@ -34,7 +34,7 @@ const getLink = (index) => {
         <h2 class="text-white text-start leading-[64px] font-semibold text-[40px]">
           Lets Talk!
         </h2>
-        <p class="mt-[14px] text-[#F4F6FC] leading-[28px] md:mb-7 max-md:mb-10">
+        <p class="mt-[14px] text-[#F4F6FC] leading-[28px] md:mb-7 max-md:mb-10 max-md:text-justify">
           We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.
         </p>
         <div class="flex md:gap-[27px] items-center max-md:w-full max-md:justify-between">
