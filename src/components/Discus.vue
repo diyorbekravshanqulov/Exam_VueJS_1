@@ -29,7 +29,7 @@ const parag = ref([
 </script>
 
 <template>
-  <div class="flex justify-center flex-wrap px-[3%] mt-[57px]">
+  <div class="flex justify-center flex-wrap px-[3%] mt-[57px] bg-[#F4F6FC]">
     <p
       class="font-medium text-[16px] text-center mt-[128px]"
       style="color: rgba(40, 41,w 56, 1)"
