@@ -37,7 +37,7 @@ const parag = ref([
       Features
     </p>
     <h2
-      class="text-center px-[25%] leading-[64px] text-5xl font-semibold mt-3"
+      class="text-center px-[320px] leading-[64px] text-5xl font-semibold mt-3"
       style="color: rgba(40, 41, 56, 1)"
     >
       Design that solves problems, one product at a time
