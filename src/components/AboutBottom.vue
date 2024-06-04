@@ -6,6 +6,16 @@ const names = ref(["John Smith", "Simon Adams", "Paul Jones", "Sara Hardin"]);
 const fields = ref(["CEO", "CTO", "Design Lead", "Project Manager"]);
 
 const logo = ref(["/facebook.svg", "/twitter.svg", "/linkdIn.svg"]);
+const getLink = (index) => {
+  if (index === 0) {
+    return "https://facebook.com";
+  } else if (index === 1) {
+    return "https://twitter.com";
+  } else {
+    return "https://linkedin.com";
+  }
+};
+
 </script>
 <template>
   <div class="w-full px-[3%] py-[128px] text-blackBlue">
@@ -24,13 +34,12 @@ const logo = ref(["/facebook.svg", "/twitter.svg", "/linkdIn.svg"]);
           <div
             class="top-full flex duration-300 absolute left-1/2 -translate-x-1/2 group-hover:top-1/2 translate-y-8"
           >
-            <a href="#" class="flex gap-3"
+            <a :href="getLink(index)" v-for="(item, index) in images" :key="index" target="_blank"
               ><img
                 v-for="(item_logo, index_logo) in logo"
                 :key="index_logo"
                 :src="item_logo"
                 alt=""
-
                 class="w-full"
               />
             </a>
