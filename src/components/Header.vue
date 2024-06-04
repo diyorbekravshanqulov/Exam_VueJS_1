@@ -5,9 +5,9 @@ const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
 </script>
 <template>
   <div
-    class="blurred-background flex px-[3%] py-[1%] w-full justify-between items-center fixed z-20"
+    class="blurred-background flex px-[3%] md:py-[1%] py-[3%] w-full justify-between items-center fixed z-20"
   >
-    <a href="#"><img src="../../public/logo.svg" alt="LOGO" /></a>
+    <a href="#"><img class="w-[80%]" src="../../public/logo.svg" alt="LOGO" /></a>
     <div class="flex gap-10 items-center">
       <a
         class="hidden md:block hover-underline-animation font-medium text-[16px] text-white"
@@ -17,7 +17,7 @@ const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
         >{{ item }}</a
       >
       <button
-        class="vibrate-button font-medium text-[16px] text-white px-10 py-[14px] rounded-[41px]"
+        class="vibrate-button font-medium text-[16px] text-white md:px-10 md:py-[14px] py-[10px] px-6 rounded-[41px]"
       >
         Contact us
       </button>
