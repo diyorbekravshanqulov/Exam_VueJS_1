@@ -47,7 +47,7 @@ const getClassForIndexImg = (index) => {
         >View Pricing &#8594;</a
       >
     </div>
-    <div class="overflow-hidden grid md:grid-cols-3 grid-rows-2 gap-[2%] w-full mt-[64px] relative">
+    <div class="overflow-hidden grid md:grid-cols-3 md:grid-rows-2 gap-[2%] w-full mt-[64px] relative">
       <div
         v-for="(item, index) in imgs"
         :key="index"
