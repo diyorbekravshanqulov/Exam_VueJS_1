@@ -24,7 +24,7 @@ const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
     </div>
   </div>
   <div class="flex flex-wrap px-[3%] bg-[#1C1E53] relative">
-    <div class="mb-[7%] mt-[14.5%] w-full flex gap-[10%] items-center">
+    <div class="mb-[6%] mt-[12%] w-full flex gap-[10%] items-center">
       <div class="flex flex-wrap">
         <h1 class="text-white font-semibold text-[54px] leading-[74px]">
           Building stellar websites for early startups
