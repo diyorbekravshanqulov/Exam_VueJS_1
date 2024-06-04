@@ -43,7 +43,7 @@ const images = ref([
     >
       <div>
         <h5 class="leading-[32px] text-[18px] font-medium">Email me at</h5>
-        <p class="mt-1  leading-[28px]">contact@website.com</p>
+        <p class="mt-1 leading-[28px]">contact@website.com</p>
       </div>
       <div>
         <h5 class="leading-[32px] text-[18px] font-medium">Call us</h5>
