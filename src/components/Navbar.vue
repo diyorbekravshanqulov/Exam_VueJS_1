@@ -15,8 +15,25 @@ const link = (index) => {
   } else if (index === 4) {
     return "/blog";
   }
-  return "contact"
+  return "contact";
 };
+
+// window.pageXOffset == window.scrollX; // always true
+// window.pageYOffset == window.scrollY; // always true
+
+// let top = ref(this.scrollY); 
+
+// window.addEventListener(
+//   "scroll",
+//   function(event) {
+//     if(top.value == 0) {
+//       const navbar = document.querySelector(".blurred-background")
+//       navbar.classList.add("background: rgba(28, 30, 83, 1);")
+//     }
+    
+//   },
+//   false
+// );
 </script>
 
 <template>
@@ -35,7 +52,8 @@ const link = (index) => {
         href="#"
         >{{ item }}</router-link
       >
-      <router-link :to="link(5)"
+      <router-link
+        :to="link(5)"
         class="vibrate-button font-medium text-[16px] text-white md:px-10 md:py-[14px] py-[10px] px-6 rounded-[41px]"
       >
         Contact us
