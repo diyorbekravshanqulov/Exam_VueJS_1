@@ -18,12 +18,12 @@ const getLink = (index) => {
 </script>
 <template>
   <div class="w-full px-[3%] py-[128px] text-blackBlue">
-    <h2 class="text-center leading-[64px] text-5xl font-semibold">
+    <h2 class="text-center leading-[64px] md:text-5xl text-4xl max-md:border-b-2 max-md:border-black font-semibold max-md:mx-8">
       Meet our team
     </h2>
-    <div class="flex mt-12 w-full justify-between">
-      <div class="py-12 px-16" v-for="(item, index) in images" :key="index">
-        <div class="relative group overflow-hidden rounded-full">
+    <div class="md:flex mt-12 w-full justify-between">
+      <div class="py-12 md:px-16" v-for="(item, index) in images" :key="index">
+        <div class="relative group overflow-hidden rounded-full max-md:flex max-md:justify-center">
           <img class="rounded-full" :src="item" alt="" />
           <img
             class="top-full duration-300 absolute left-0 group-hover:top-0"

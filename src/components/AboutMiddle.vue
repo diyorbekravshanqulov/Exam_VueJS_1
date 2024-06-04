@@ -6,7 +6,7 @@ const h3 = ref(["Goal focussed", "Continuous improvement"])
 </script>
 <template>
   <div class="w-full px-[3%] my-[127px]">
-    <div class="flex px-[94px] py-[96px] text-blackBlue gap-[61px]">
+    <div class="md:flex md:px-[94px] px-4 md:py-[96px] text-blackBlue gap-[61px]">
       <div v-for="(item, index) in h3" :key="index">
         <h3 class="leading-[56px] text-[38px] font-semibold">{{ item }}</h3>
         <p class="mt-4 leading-[28px]">
@@ -17,6 +17,6 @@ const h3 = ref(["Goal focussed", "Continuous improvement"])
         </p>
       </div>
     </div>
-    <img class="w-full" src="../../public/aboutMiddle.svg" alt="">
+    <img class="w-full md:m-0 mt-4" src="../../public/aboutMiddle.svg" alt="">
   </div>
 </template>

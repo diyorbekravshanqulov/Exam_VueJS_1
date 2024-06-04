@@ -22,16 +22,16 @@ const getLink = (index) => {
 </script>
 
 <template>
-  <div class="flex justify-start flex-wrap px-[3%] py-[96px] bg-[#1C1E53]">
-    <div class="md:flex gap-[260px]">
+  <div class="flex max-md:gap-14 justify-start flex-wrap px-[3%] py-[96px] bg-[#1C1E53]">
+    <div class="flex md:gap-[260px] gap-14 max-md:flex-wrap ">
       <div>
-        <img class="mx-auto md:m-0" src="../../public/logo.svg" alt="Company Logo" />
+        <img src="../../public/logo.svg" alt="Company Logo" />
         <p class="mt-[23px] text-white leading-[28px] font-medium">
           We are always open to discuss your project and improve your online presence.
         </p>
       </div>
-      <div>
-        <h2 class="text-white md:text-start text-center leading-[64px] font-semibold text-[40px]">
+      <div >
+        <h2 class="text-white text-start leading-[64px] font-semibold text-[40px]">
           Lets Talk!
         </h2>
         <p class="mt-[14px] text-[#F4F6FC] leading-[28px] mb-7">
@@ -39,7 +39,7 @@ const getLink = (index) => {
         </p>
         <div class="flex gap-[27px] items-center">
           <a :href="getLink(index)" v-for="(item, index) in images" :key="index" target="_blank">
-            <img :src="item" alt="logo_social" />
+            <img :src="item" alt="logo_social" /> 
           </a>
         </div>
       </div>
