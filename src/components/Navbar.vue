@@ -2,6 +2,21 @@
 import { ref } from "vue";
 
 const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
+
+const link = (index) => {
+  if (index === 0) {
+    return "/";
+  } else if (index === 1) {
+    return "/about";
+  } else if (index === 2) {
+    return "/pricing";
+  } else if (index === 3) {
+    return "/work";
+  } else if (index === 4) {
+    return "/blog";
+  }
+  return "contact"
+};
 </script>
 
 <template>
@@ -12,18 +27,19 @@ const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
       ><img class="w-[80%]" src="../../public/logo.svg" alt="LOGO"
     /></a>
     <div class="flex gap-10 items-center">
-      <a
+      <router-link
+        :to="link(index)"
         class="hidden md:block hover-underline-animation font-medium text-[16px] text-white"
         v-for="(item, index) in menu"
         :key="index"
         href="#"
-        >{{ item }}</a
+        >{{ item }}</router-link
       >
-      <button
+      <router-link :to="link(5)"
         class="vibrate-button font-medium text-[16px] text-white md:px-10 md:py-[14px] py-[10px] px-6 rounded-[41px]"
       >
         Contact us
-      </button>
+      </router-link>
     </div>
   </div>
 </template>
