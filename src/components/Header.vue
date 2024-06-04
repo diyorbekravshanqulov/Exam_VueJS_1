@@ -35,12 +35,12 @@ const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
         </p>
         <div class="flex items-center mt-12 gap-10">
           <button
-            class="vibrate-rotate-button rounded-[41px] md:px-12 md:py-4 px-10 py-3 text-[18px] font-semibold"
+            class="vibrate-rotate-button rounded-[41px] md:px-12 md:py-4 px-10 py-3 md:text-[18px] font-semibold"
           >
             View our work
           </button>
           <a
-            class="hover-underline-animation text-[16px] font-medium"
+            class="hover-underline-animation md:text-[16px] text-[14px] font-medium"
             style="color: rgba(255, 255, 255, 1)"
             href="#"
             >View Pricing &#8594;</a
