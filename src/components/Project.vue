@@ -4,7 +4,7 @@ import { ref } from "vue";
 const imgs = ref([
   "/project_women.svg",
   "/before.svg",
-  "/project_women.svg",
+  "/image.png",
   "/before2.svg",
   "/project_women2.svg",
 ]);
@@ -19,21 +19,18 @@ const getClassForIndex = (index) => {
   } else if (index == 1) {
     return "col-span-1 row-span-2 absolute left-0 top-0";
   } else {
-    return "row-span-1 col-span-1 absolute w-[490px] h-[349px] top-0 right-0";
+    return "row-span-1 col-span-1 absolute top-0 right-0";
   }
 };
 </script>
 
 <template>
-  <div class="flex flex-wrap px-[10%] mt-[57px] mb-[128px]">
+  <div class="flex flex-wrap px-[3%] mt-[57px] mb-[128px]">
     <div class="flex w-full justify-between items-center mb-4">
-      <h2 class="font-semibold text-5xl" style="color: rgba(40, 41, 56, 1)">
+      <h2 class="font-semibold text-[40px]" style="color: rgba(40, 41, 56, 1)">
         View our projects
       </h2>
-      <a
-        class="text-[16px] font-medium"
-        style="color: rgba(255, 255, 255, 1)"
-        href="#"
+      <a class="hover-underline-animation text-[16px] font-medium text-[#282938]" href="#"
         >View Pricing &#8594;</a
       >
     </div>
@@ -49,3 +46,29 @@ const getClassForIndex = (index) => {
   </div>
 </template>
 
+<style scoped>
+.hover-underline-animation {
+  position: relative;
+  /* color: white; */
+  text-decoration: none;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.hover-underline-animation:hover::after {
+  width: 100%;
+  left: 0;
+  /* background: white; */
+  background: #282938;
+}
+</style>

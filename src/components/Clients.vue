@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="grid grid-cols-3 px-[10%] gap-[17%] mt-[57px] py-[128px]">
+  <div class="grid grid-cols-3 px-[3%] gap-[10%] mt-[57px] py-[128px]">
     <div>
       <h3
         class="text-[38px] font-semibold leading-[56px]"

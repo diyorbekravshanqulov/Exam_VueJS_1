@@ -5,9 +5,9 @@ const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
 </script>
 <template>
   <div
-    class="blurred-background flex px-[10%] py-[33px] w-full justify-between items-center fixed z-20"
+    class="blurred-background flex px-[3%] py-[1%] w-full justify-between items-center fixed z-20"
   >
-    <img src="../../public/logo.svg" alt="LOGO" />
+    <a href="#"><img src="../../public/logo.svg" alt="LOGO" /></a>
     <div class="flex gap-10 items-center">
       <a
         class="hover-underline-animation font-medium text-[16px] text-white"
@@ -17,14 +17,14 @@ const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
         >{{ item }}</a
       >
       <button
-        class="vibrate-button font-medium text-[16px] text-white px-12 py-4 rounded-[41px]"
+        class="vibrate-button font-medium text-[16px] text-white px-10 py-[14px] rounded-[41px]"
       >
         Contact us
       </button>
     </div>
   </div>
-  <div class="flex flex-wrap px-[10%] bg-[#1C1E53] relative">
-    <div class="mb-[128px] mt-[218px] w-full flex gap-[20%] items-center">
+  <div class="flex flex-wrap px-[3%] bg-[#1C1E53] relative">
+    <div class="mb-[7%] mt-[14.5%] w-full flex gap-[10%] items-center">
       <div class="flex flex-wrap">
         <h1 class="text-white font-semibold text-[54px] leading-[74px]">
           Building stellar websites for early startups
@@ -35,7 +35,7 @@ const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
         </p>
         <div class="flex items-center mt-12 gap-10">
           <button
-            class="vibrate-rotate-button rounded-[41px] px-[56px] py-4 text-[18px] font-semibold"
+            class="vibrate-rotate-button rounded-[41px] px-12 py-4 text-[18px] font-semibold"
           >
             View our work
           </button>
