@@ -4,21 +4,21 @@
       <div
         class="md:mb-[6%] md:mt-[12%] mb-[14%] mt-[30%] w-full flex md:flex-nowrap flex-wrap gap-[10%] items-center"
       >
-        <div class="flex flex-wrap md:mb-0 mb-[15%]">
+        <div class="flex flex-wrap md:mb-0 mb-[20%]">
           <h1
-            class="text-white md:text-start text-center font-semibold md:text-[54px] text-4xl md:leading-[74px] leading-[55px]"
+            class="text-white md:text-start text-center font-semibold md:text-[54px] text-2xl md:leading-[74px] leading-[55px]"
           >
             Building stellar websites for early startups
           </h1>
           <p
-            class="text-white md:text-start text-center mt-6 text-[16px] font-medium"
+            class="text-white md:text-start text-center mt-6 text-[14px] md:text-[16px] font-medium"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt.
           </p>
-          <div class="flex items-center mt-12 gap-10">
+          <div class="flex items-center max-md:justify-between max-md:px-8 max-md:w-full mt-12 gap-10">
             <button
-              class="vibrate-rotate-button rounded-[41px] md:px-12 md:py-4 px-8 py-3 md:text-[18px] font-semibold"
+              class="vibrate-rotate-button rounded-[41px] md:px-12 md:py-4 px-6 py-2 md:text-[18px] text-[14px] font-semibold"
             >
               View our work
             </button>

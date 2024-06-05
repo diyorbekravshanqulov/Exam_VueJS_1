@@ -25,7 +25,7 @@ const getLink = (index) => {
     </h2>
     <div class="md:flex mt-12 w-full justify-between">
       <div class="py-12 md:px-16" v-for="(item, index) in images" :key="index">
-        <div class="relative group overflow-hidden rounded-full max-md:flex max-md:justify-center">
+        <div class="relative group overflow-hidden rounded-full max-md:flex max-md:justify-center ">
           <img class="rounded-full max-md:w-full" :src="item" alt="" />
           <img
             class="top-full max-md:w-full duration-300 absolute left-0 group-hover:top-0 max-md:left-1/2 max-md:-translate-x-1/2"
