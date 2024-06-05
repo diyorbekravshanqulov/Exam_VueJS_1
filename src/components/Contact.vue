@@ -33,7 +33,7 @@ const func = () => {
 
       <div class="w-full mt-16 px-[110px]">
         <div
-          class="bg-[#F4F6FC] mx-auto border border-red-500 rounded-[12px] py-[55px] px-[77px]"
+          class="bg-[#F4F6FC] mx-auto rounded-[12px] py-[55px] px-[77px]"
         >
           <form
             action=""
