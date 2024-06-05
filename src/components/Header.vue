@@ -18,7 +18,7 @@
           </p>
           <div class="flex items-center max-md:justify-between max-md:w-full mt-12 gap-10">
             <button
-              class="vibrate-rotate-button rounded-[41px] md:px-12 md:py-4 px-6 py-2 md:text-[18px] text-[14px] font-semibold"
+              class="vibrate-rotate-button rounded-[41px] md:px-12 md:py-4 px-6 py-3 md:text-[18px] text-[14px] font-semibold"
             >
               View our work
             </button>
