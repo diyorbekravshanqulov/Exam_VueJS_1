@@ -29,33 +29,45 @@ const getClassForIndexImg = (index) => {
   } else {
     return "";
   }
-}
+};
 </script>
 
 <template>
-  <div class="flex flex-wrap px-[3%] mt-[57px] mb-[128px]">
-    <div class="flex w-full justify-between items-center mb-4">
-      <h2
-        class="font-semibold text-xl md:text-[40px]"
-        style="color: rgba(40, 41, 56, 1)"
-      >
-        View our projects
-      </h2>
-      <a
-        class="hover-underline-animation text-[14px] md:text-[16px] font-medium text-[#282938]"
-        href="#"
-        >View Pricing &#8594;</a
-      >
-    </div>
-    <div class="overflow-hidden grid md:grid-cols-3 md:grid-rows-2 gap-[2%] w-full mt-[64px] relative">
+  <div class="flex justify-center">
+    <div class="container flex flex-wrap mt-[57px] mb-[128px]">
+      <div class="flex w-full justify-between items-center mb-4">
+        <h2
+          class="font-semibold text-xl md:text-[40px]"
+          style="color: rgba(40, 41, 56, 1)"
+        >
+          View our projects
+        </h2>
+        <a
+          class="hover-underline-animation text-[14px] md:text-[16px] font-medium text-[#282938]"
+          href="#"
+          >View Pricing &#8594;</a
+        >
+      </div>
       <div
-        v-for="(item, index) in imgs"
-        :key="index"
-        :class="['relative', 'group', getClassForIndex(index)]"
+        class="overflow-hidden grid md:grid-cols-3 md:grid-rows-2 gap-[2%] w-full mt-[64px] relative"
       >
-        <img class="w-full" :src="item" alt="" />
-        <div v-if="index === 1 || index === 3" class="absolute top-0 w-full h-full z-10">
-          <img class="w-full h-full object-cover duration-300" :class="getClassForIndexImg(index)" :src="item" alt="" />
+        <div
+          v-for="(item, index) in imgs"
+          :key="index"
+          :class="['relative', 'group', getClassForIndex(index)]"
+        >
+          <img class="w-full" :src="item" alt="" />
+          <div
+            v-if="index === 1 || index === 3"
+            class="absolute top-0 w-full h-full z-10"
+          >
+            <img
+              class="w-full h-full object-cover duration-300"
+              :class="getClassForIndexImg(index)"
+              :src="item"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>

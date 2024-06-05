@@ -22,7 +22,9 @@ const getLink = (index) => {
 </script>
 
 <template>
-  <div class="flex max-md:gap-14 justify-start flex-wrap px-[3%] py-[96px] bg-[#1C1E53]">
+  <div class="flex bg-[#1C1E53] justify-center">
+
+  <div class="container flex max-md:gap-14 justify-start flex-wrap py-[96px]">
     <div class="flex md:gap-[260px] gap-14 max-md:flex-wrap ">
       <div>
         <img src="../../public/logo.svg" alt="Company Logo" />
@@ -54,5 +56,6 @@ const getLink = (index) => {
         <p class="md:mt-1 md:text-[16px] text-[12px] leading-[28px]">0927 6277 28525</p>
       </div>
     </div>
+  </div>
   </div>
 </template>
