@@ -61,9 +61,11 @@ const hamburger = () => {
   <div class="bg-[#1C1E53] fixed w-full z-40 flex justify-center">
     <div
       id="hamMenu"
-      class="container max-md:py-5 text-white flex md:py-[1%] w-full justify-between items-center"
+      class="container max-md:py-5 max-md:px-[3%] text-white flex md:py-[1%] w-full justify-between items-center"
     >
-      <a href="#"><img class="w-[80%]" src="../../public/logo.svg" alt="LOGO" /></a>
+      <router-link to="/" href="#"
+        ><img class="w-[80%]" src="../../public/logo.svg" alt="LOGO"
+      /></router-link>
       <div class="flex gap-10 items-center">
         <router-link
           :to="link(index)"
@@ -84,7 +86,7 @@ const hamburger = () => {
           <button
             id="hamburger"
             @click="hamburger()"
-            class="flex justify-center items-center text-5xl text-white mb-2 px-4"
+            class="flex justify-center items-center text-4xl text-white mb-2 px-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -92,43 +94,13 @@ const hamburger = () => {
               height="1em"
               viewBox="0 0 48 48"
             >
-              <defs>
-                <mask id="ipSLeftC0">
-                  <g fill="none" stroke-linejoin="round" stroke-width="4">
-                    <path
-                      fill="#fff"
-                      stroke="#fff"
-                      d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"
-                    />
-                    <path
-                      stroke="#000"
-                      stroke-linecap="round"
-                      d="m27 33l-9-9l9-9"
-                    />
-                  </g>
-                </mask>
-              </defs>
               <path
-                fill="currentColor"
-                d="M0 0h48v48H0z"
-                mask="url(#ipSLeftC0)"
-              />
-            </svg>
-          </button>
-          <button
-            id="left"
-            @click="hamburger()"
-            class="hidden duration-150 justify-center items-center text-5xl text-white mb-2 px-4"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 1024 1024"
-            >
-              <path
-                fill="currentColor"
-                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64m154.7 454.5l-246 178c-5.3 3.8-12.7 0-12.7-6.5v-46.9c0-10.2 4.9-19.9 13.2-25.9L566.6 512L421.2 406.8c-8.3-6-13.2-15.6-13.2-25.9V334c0-6.5 7.4-10.3 12.7-6.5l246 178c4.4 3.2 4.4 9.8 0 13"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+                d="M7.95 11.95h32m-32 12h32m-32 12h32"
               />
             </svg>
           </button>
