@@ -33,7 +33,7 @@
       ></div>
 
       <div
-        class="absolute md:left-[100px] left-[6%] md:top-[400px] top-1/2 transform translate-y-[-60%] font-righteous text-[#363e49] text-center md:text-left"
+        class="absolute md:left-[100px] left-[5%] md:top-[400px] top-1/2 transform translate-y-[-60%] font-righteous text-[#363e49] text-center md:text-left"
       >
         <div class="text-[5em] md:text-[10em]">404</div>
         <div class="text-[1.5em] md:text-[2em]">Hmmm...</div>
