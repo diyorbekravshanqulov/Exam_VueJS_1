@@ -35,11 +35,11 @@
           </div>
         </div>
         <div class="flex items-center gap-[10px]">
-          <button class="text-[#282938] md:w-[48px] md:h-[48px] h-[36px] w-[36px] flex items-center justify-center rounded-full text-2xl md:text-4xl">
+          <button class="text-[#282938] md:w-[48px] md:h-[48px] h-[34px] w-[34px] flex items-center justify-center rounded-full text-xl md:text-4xl">
             &lt;
           </button>
           <button
-            class="md:w-[48px] md:h-[48px] h-[36px] w-[36px] flex items-center justify-center rounded-full text-2xl md:text-4xl bg-[#5239FA]"
+            class="md:w-[48px] md:h-[48px] h-[34px] w-[34px] flex items-center justify-center rounded-full text-xl md:text-4xl bg-[#5239FA]"
             style="color: rgba(255, 255, 255, 1)"
           >
             &gt;
