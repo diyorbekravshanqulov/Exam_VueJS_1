@@ -24,7 +24,7 @@ const getLink = (index) => {
 <template>
   <div class="flex bg-[#1C1E53] justify-center">
 
-  <div class="container flex max-md:gap-14 justify-start flex-wrap py-[96px]">
+  <div class="container max-md:px-[5%] flex max-md:gap-14 justify-start flex-wrap py-[96px]">
     <div class="flex md:gap-[260px] gap-14 max-md:flex-wrap ">
       <div>
         <img src="../../public/logo.svg" alt="Company Logo" />

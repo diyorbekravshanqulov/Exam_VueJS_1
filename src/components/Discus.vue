@@ -30,7 +30,7 @@ const parag = ref([
 
 <template>
   <div class="flex bg-[#F4F6FC] justify-center">
-    <div class="container flex justify-center flex-wrap mt-[57px]">
+    <div class="container flex max-md:px-[5%] justify-center flex-wrap mt-[57px]">
       <p
         class="font-medium text-[16px] text-center mt-[128px]"
         style="color: rgba(40, 41, w 56, 1)"
@@ -49,11 +49,11 @@ const parag = ref([
         <div
           v-for="(item, index) in h6"
           :key="index"
-          class="px-12 py-11 bg-white duration-300 hover:shadow-xl"
+          class="md:px-12 px-6 md:py-14 py-10 bg-white duration-300 hover:shadow-2xl max-md:hover:shadow-xl"
         >
-          <img :src="func(index)" alt="" />
+          <img class="max-md:mx-auto max-md:w-1/4" :src="func(index)" alt="" />
           <!-- Adjust index -->
-          <h6 class="text-2xl mt-[25px]" style="color: rgba(40, 41, 56, 1)">
+          <h6 class="max-md:text-center text-2xl mt-[25px]" style="color: rgba(40, 41, 56, 1)">
             {{ item }}
           </h6>
           <p class="mt-3 text-[16px]" style="color: rgba(40, 41, 56, 1)">

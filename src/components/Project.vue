@@ -34,7 +34,7 @@ const getClassForIndexImg = (index) => {
 
 <template>
   <div class="flex justify-center">
-    <div class="container flex flex-wrap mt-[57px] mb-[128px]">
+    <div class="container  max-md:px-[5%] flex flex-wrap mt-[57px] mb-[128px]">
       <div class="flex w-full justify-between items-center mb-4">
         <h2
           class="font-semibold text-xl md:text-[40px]"

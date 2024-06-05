@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 
 const menu = ref(["Home", "About us", "Pricing", "Work", "Blog"]);
 const menu_hambur = ref([
@@ -55,13 +55,33 @@ const hamburger = () => {
     left.style.display = "none";
   }
 };
+
+
+const isScrolled = ref(false);
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 0;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
+
+
 </script>
 
 <template>
-  <div class="bg-[#1C1E53] fixed w-full z-40 flex justify-center">
+  <div
+    :class="isScrolled ? 'backdrop-blur-sm bg-opacity-80' : ''"
+    class="bg-[#1C1E53] fixed w-full z-40 duration-200 flex justify-center"
+  >
     <div
       id="hamMenu"
-      class="container max-md:py-5 max-md:px-[3%] text-white flex md:py-[1%] w-full justify-between items-center"
+      class="container max-md:py-5 max-md:px-[5%] text-white flex md:py-[1%] w-full justify-between items-center"
     >
       <router-link to="/" href="#"
         ><img class="w-[80%]" src="../../public/logo.svg" alt="LOGO"
@@ -69,7 +89,7 @@ const hamburger = () => {
       <div class="flex gap-10 items-center">
         <router-link
           :to="link(index)"
-          class="hidden md:block anime font-medium text-[16px] text-white"
+          class="hidden md:block hover-underline-animation font-medium text-[16px] text-white"
           v-for="(item, index) in menu"
           :key="index"
           href="#"
@@ -77,7 +97,7 @@ const hamburger = () => {
         >
         <router-link
           :to="link(5)"
-          class="border-white/20 hidden md:block hover:border-white border-2 py-4 px-12 rounded-full cursor-pointer"
+          class="vibrate-button border-white/20 hidden md:block hover:border-white border-2 py-4 px-12 rounded-full cursor-pointer"
         >
           Contact us
         </router-link>

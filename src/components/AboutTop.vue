@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="w-full md:h-[92px] h-[81px] bg-blueBox"></div>
+  <div class="w-full "></div>
   <div class="md:flex items-center w-full justify-between px-[3%] gap-[13%] mt-8 md:pt-[128px]">
     <div>
       <p class="text-blackBlue text-[18px] ">About us</p>
