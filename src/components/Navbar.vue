@@ -29,9 +29,9 @@ const link = (index) => {
 const hamburger = () => {
   const back = document.getElementById("back");
   const hambur = document.getElementById("hambur");
-  const hamburger = document.getElementById("hamburger");
+  // const hamburger = document.getElementById("hamburger");
   const left = document.getElementById("left");
-  const hamMenu = document.getElementById("hamMenu");
+  // const hamMenu = document.getElementById("hamMenu");
 
   if (back.style.display === "none") {
     hamMenu.style.background = "#1C1E53";
@@ -46,13 +46,13 @@ const hamburger = () => {
   if (hambur.style.right == "-100%") {
     // hambur.style.display = "flex";
     hambur.style.right = "0px";
-    hamburger.style.display = "none";
-    left.style.display = "block";
+    // hamburger.style.display = "none";
+    // left.style.display = "block";
   } else {
     hambur.style.right = "-100%";
     // hambur.style.display = "none";
-    hamburger.style.display = "block";
-    left.style.display = "none";
+    // hamburger.style.display = "block";
+    // left.style.display = "none";
   }
 };
 </script>
