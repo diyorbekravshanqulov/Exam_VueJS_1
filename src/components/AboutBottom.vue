@@ -37,11 +37,11 @@ const getLink = (index) => {
             class="top-full max-md:w-[65%] flex duration-300 gap-4 absolute left-1/2 -translate-x-1/2 group-hover:top-1/2 translate-y-[200%] md:translate-y-9"
           >
             <a
-              :href="getLink(index_logo)" class="max-md:w-full"
+              :href="getLink(index_logo)" class="max-md:w-1/2"
               v-for="(item_logo, index_logo) in logo"
               :key="index_logo"
               target="_blank"
-              ><img :src="item_logo" alt="" class="w-full" />
+              ><img :src="item_logo" alt="" class="max-md:w-1/2 mx-auto" />
             </a>
           </div>
         </div>
