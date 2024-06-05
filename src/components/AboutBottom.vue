@@ -23,12 +23,12 @@ const getLink = (index) => {
     <h2 class="text-center leading-[64px] md:text-5xl text-4xl max-md:border-b-2 max-md:border-black font-semibold max-md:mx-4">
       Meet our team
     </h2>
-    <div class="flex mt-12 w-4/5 justify-center max-md:flex-wrap md:justify-between">
+    <div class="flex mt-12 w-4/5 justify-center max-md:flex-wrap md:justify-between max-md:bg-white">
       <div class="py-12 md:px-16" v-for="(item, index) in images" :key="index">
         <div class="relative group overflow-hidden rounded-full max-md:flex max-md:justify-center ">
           <img class="rounded-full max-md:w-4/5" :src="item" alt="" />
           <img
-          
+
             class="top-full max-md:w-4/5 duration-300 absolute left-0 group-hover:top-0 max-md:left-1/2 max-md:-translate-x-1/2"
             src="../../public/aboutHover.svg"
             alt=""
