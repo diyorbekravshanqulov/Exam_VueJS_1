@@ -32,7 +32,7 @@ const parag = ref([
   <div class="flex bg-[#F4F6FC] justify-center">
     <div class="container flex max-md:px-0 justify-center flex-wrap mt-[57px]">
       <p
-        class="font-medium text-[16px] text-center mt-[128px]"
+        class="font-medium text-[16px] text-center md:mt-[128px]"
         style="color: rgba(40, 41, w 56, 1)"
       >
         Features
