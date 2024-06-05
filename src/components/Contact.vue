@@ -9,6 +9,11 @@ const input = ref([
   "Select Subject",
   "Write your question here",
 ]);
+
+const func = () => {
+  alert('Message successfully sent!')
+}
+
 </script>
 
 <template>
@@ -62,6 +67,7 @@ const input = ref([
               ></textarea>
             </div>
             <input
+              @click="func()"
               type="submit"
               class="cursor-pointer duration-300 hover:text-gray-500 border border-transparent hover:bg-white hover:border-gray-500 px-8 w-[254px] py-4 rounded-[41px] bg-blackBlue text-[#F4F6FC] text-[18px] font-semibold mt-8"
             />
@@ -72,11 +78,8 @@ const input = ref([
   </div>
 </template>
 
-
-<style scoped> 
-
-input[type='submit']:hover {
+<style scoped>
+input[type="submit"]:hover {
   box-shadow: 0 0 10px grey;
 }
-
 </style>
