@@ -29,9 +29,9 @@ const link = (index) => {
 const hamburger = () => {
   const back = document.getElementById("back");
   const hambur = document.getElementById("hambur");
-  // const hamburger = document.getElementById("hamburger");
+  const hamburger = document.getElementById("hamburger");
   const left = document.getElementById("left");
-  // const hamMenu = document.getElementById("hamMenu");
+  const hamMenu = document.getElementById("hamMenu");
 
   if (back.style.display === "none") {
     hamMenu.style.background = "#1C1E53";
@@ -46,13 +46,13 @@ const hamburger = () => {
   if (hambur.style.right == "-100%") {
     // hambur.style.display = "flex";
     hambur.style.right = "0px";
-    // hamburger.style.display = "none";
-    // left.style.display = "block";
+    hamburger.style.display = "none";
+    left.style.display = "block";
   } else {
     hambur.style.right = "-100%";
     // hambur.style.display = "none";
-    // hamburger.style.display = "block";
-    // left.style.display = "none";
+    hamburger.style.display = "block";
+    left.style.display = "none";
   }
 };
 </script>
@@ -101,6 +101,23 @@ const hamburger = () => {
                 stroke-linejoin="round"
                 stroke-width="4"
                 d="M7.95 11.95h32m-32 12h32m-32 12h32"
+              />
+            </svg>
+          </button>
+          <button
+            id="left"
+            @click="hamburger()"
+            class="hidden justify-center items-center text-4xl text-white mb-2 px-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
               />
             </svg>
           </button>
