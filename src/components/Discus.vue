@@ -51,12 +51,12 @@ const parag = ref([
           :key="index"
           class="md:px-12 px-6 md:py-14 py-10 bg-white duration-300 hover:shadow-2xl max-md:hover:shadow-xl"
         >
-          <img class="max-md:mx-auto max-md:w-1/4" :src="func(index)" alt="" />
+          <img class="max-md:mx-auto max-md:w-[20%]" :src="func(index)" alt="" />
           <!-- Adjust index -->
-          <h6 class="max-md:text-center text-2xl mt-[25px]" style="color: rgba(40, 41, 56, 1)">
+          <h6 class="max-md:text-center md:text-2xl mt-[25px]" style="color: rgba(40, 41, 56, 1)">
             {{ item }}
           </h6>
-          <p class="mt-3 text-[16px]" style="color: rgba(40, 41, 56, 1)">
+          <p class="mt-3 text-[14px] leading-7 text-justify indent-8 mdt:ext-[16px]" style="color: rgba(40, 41, 56, 1)">
             {{ parag[0] }}
           </p>
           <!-- Access the first element of the 'parag' array -->
