@@ -38,9 +38,9 @@ const hamburger = () => {
     back.style.display = "block";
   } else {
     back.style.display = "none";
-    hamMenu.style.background = "rgba(28, 30, 83, 0.8)";
-    hamMenu.style.backdropFilter = "blur(30px)";
-    hamMenu.style.webkitBackdropFilter = "blur(30px)";
+    hamMenu.style.background = "rgba(28, 30, 83, 0.5)";
+    hamMenu.style.backdropFilter = "blur(15px)";
+    hamMenu.style.webkitBackdropFilter = "blur(15px)";
   }
 
   if (hambur.style.right == "-100%") {
@@ -77,7 +77,7 @@ onUnmounted(() => {
 <template>
   <div
     :class="isScrolled ? 'backdrop-blur-sm bg-opacity-80' : ''"
-    class="bg-[#1C1E53] fixed w-full z-40 duration-200 flex justify-center"
+    class="bg-[#1C1E53] top-0 fixed w-full z-40 duration-200 flex justify-center"
   >
     <div
       id="hamMenu"
@@ -177,9 +177,9 @@ onUnmounted(() => {
 
 @media (max-width: 768px) {
   .blurred-background {
-    background: rgba(28, 30, 83, 0.8);
-    backdrop-filter: blur(30px); /* Adjust the blur value as needed */
-    -webkit-backdrop-filter: blur(30px);
+    background: rgba(28, 30, 83, 0.5);
+    backdrop-filter: blur(15px); /* Adjust the blur value as needed */
+    -webkit-backdrop-filter: blur(15jpx);
   }
 }
 

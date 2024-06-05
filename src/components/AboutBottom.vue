@@ -17,7 +17,9 @@ const getLink = (index) => {
 };
 </script>
 <template>
-  <div class="w-full px-[3%] md:py-[128px] text-blackBlue">
+  <div class="flex justify-center">
+
+  <div class="container max-md:px-[5%] w-full px-[3%] md:py-[128px] text-blackBlue">
     <h2 class="text-center leading-[64px] md:text-5xl text-4xl max-md:border-b-2 max-md:border-black font-semibold max-md:mx-8">
       Meet our team
     </h2>
@@ -48,5 +50,6 @@ const getLink = (index) => {
         <p class="mt-1 text-center">{{ fields[index] }}</p>
       </div>
     </div>
+  </div>
   </div>
 </template>
