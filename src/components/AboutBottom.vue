@@ -29,12 +29,12 @@ const getLink = (index) => {
           <img class="rounded-full max-md:w-4/5" :src="item" alt="" />
           <img
 
-            class="top-full max-md:w-4/5 duration-300 absolute left-0 group-hover:top-0 max-md:left-1/2 max-md:-translate-x-1/2"
+            class="top-full max-md:w-4/5 duration-300 absolute left-0 rounded-full group-hover:top-0 max-md:left-1/2 max-md:-translate-x-1/2"
             src="../../public/aboutHover.svg"
             alt=""
           />
           <div
-            class="top-full max-md:w-[40%] flex duration-300 gap-4 absolute left-1/2 -translate-x-1/2 group-hover:top-1/2 translate-y-[250%] md:translate-y-9"
+            class="top-full max-md:w-[40%] flex duration-300 gap-4 absolute left-1/2 -translate-x-1/2 group-hover:top-1/2 translate-y-[200%] md:translate-y-9"
           >
             <a
               :href="getLink(index_logo)" class="max-md:w-full"
