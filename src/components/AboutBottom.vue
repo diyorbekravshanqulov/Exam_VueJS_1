@@ -19,12 +19,12 @@ const getLink = (index) => {
 <template>
   <div class="flex justify-center bg-[#F4F6FC]">
 
-  <div class="container max-md:flex justify-center flex-wrap max-md:px-[5%] w-full px-[3%] md:py-[128px] text-blackBlue py-[64px]">
+  <div class="container max-md:flex justify-center flex-wrap w-full px-[3%] md:py-[128px] text-blackBlue py-[64px]">
     <h2 class="text-center leading-[64px] md:text-5xl text-4xl max-md:border-b-2 max-md:border-black font-semibold max-md:mx-4">
       Meet our team
     </h2>
-    <div class="flex mt-12 w-4/5 justify-center max-md:flex-wrap md:justify-between max-md:bg-white">
-      <div class="py-12 md:px-16" v-for="(item, index) in images" :key="index">
+    <div class="flex mt-12 w-full justify-center max-md:flex-wrap gap-4 md:justify-between max-md:bg-white max-md:px-4">
+      <div class="py-12 md:px-16 w-full" v-for="(item, index) in images" :key="index">
         <div class="relative group overflow-hidden rounded-full max-md:flex max-md:justify-center ">
           <img class="rounded-full max-md:w-4/5" :src="item" alt="" />
           <img
