@@ -127,7 +127,7 @@ onUnmounted(() => {
           <button
             id="left"
             @click="hamburger()"
-            class="hidden justify-center items-center text-4xl text-white mb-2 px-4"
+            class="hidden justify-center items-center text-4xl text-white mb-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +179,7 @@ onUnmounted(() => {
   .blurred-background {
     background: rgba(28, 30, 83, 0.5);
     backdrop-filter: blur(15px); /* Adjust the blur value as needed */
-    -webkit-backdrop-filter: blur(15jpx);
+    -webkit-backdrop-filter: blur(15px);
   }
 }
 
