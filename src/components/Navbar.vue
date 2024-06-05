@@ -127,7 +127,7 @@ onUnmounted(() => {
           <button
             id="left"
             @click="hamburger()"
-            class="hidden justify-center items-center text-4xl text-white mb-2"
+            class="hidden justify-center items-center text-4xl text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
