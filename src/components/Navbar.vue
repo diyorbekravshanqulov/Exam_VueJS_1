@@ -23,7 +23,7 @@ const link = (index) => {
   } else if (index === 4) {
     return "/blog";
   }
-  return "contact";
+  return "/contact";
 };
 
 const hamburger = () => {
