@@ -17,23 +17,24 @@ const getLink = (index) => {
 };
 </script>
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center bg-[#F4F6FC]">
 
-  <div class="container max-md:px-[5%] w-full px-[3%] md:py-[128px] text-blackBlue">
+  <div class="container max-md:flex justify-center flex-wrap max-md:px-[5%] w-full px-[3%] md:py-[128px] text-blackBlue py-[64px]">
     <h2 class="text-center leading-[64px] md:text-5xl text-4xl max-md:border-b-2 max-md:border-black font-semibold max-md:mx-4">
       Meet our team
     </h2>
-    <div class="md:flex mt-12 w-full justify-between">
+    <div class="flex mt-12 w-4/5 justify-center max-md:flex-wrap md:justify-between">
       <div class="py-12 md:px-16" v-for="(item, index) in images" :key="index">
         <div class="relative group overflow-hidden rounded-full max-md:flex max-md:justify-center ">
-          <img class="rounded-full max-md:w-full" :src="item" alt="" />
+          <img class="rounded-full max-md:w-4/5" :src="item" alt="" />
           <img
-            class="top-full max-md:w-full duration-300 absolute left-0 group-hover:top-0 max-md:left-1/2 max-md:-translate-x-1/2"
+          
+            class="top-full max-md:w-4/5 duration-300 absolute left-0 group-hover:top-0 max-md:left-1/2 max-md:-translate-x-1/2"
             src="../../public/aboutHover.svg"
             alt=""
           />
           <div
-            class="top-full max-md:w-[45%] flex duration-300 gap-4 absolute left-1/2 -translate-x-1/2 group-hover:top-1/2 translate-y-[200%] md:translate-y-9"
+            class="top-full max-md:w-[40%] flex duration-300 gap-4 absolute left-1/2 -translate-x-1/2 group-hover:top-1/2 translate-y-[250%] md:translate-y-9"
           >
             <a
               :href="getLink(index_logo)" class="max-md:w-full"
