@@ -77,7 +77,7 @@ onUnmounted(() => {
 <template>
   <div
     :class="isScrolled ? 'backdrop-blur-sm bg-opacity-80' : ''"
-    class="bg-[#1C1E53] top-0 fixed w-full z-40 duration-200 flex justify-center"
+    class="temp bg-[#1C1E53] top-0 fixed w-full z-40 duration-200 flex justify-center"
   >
     <div
       id="hamMenu"

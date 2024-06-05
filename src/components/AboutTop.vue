@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="flex justify-center">
+  <div class="temp flex justify-center">
     <div
       class="container md:flex items-center w-full justify-between max-md:px-[5%] gap-[13%] max-md:mt-[128px] md:pt-[128px]"
     >

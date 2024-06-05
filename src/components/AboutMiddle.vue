@@ -5,7 +5,7 @@ const h3 = ref(["Goal focussed", "Continuous improvement"])
 
 </script>
 <template>
-  <div class="flex justify-center">
+  <div class="temp flex justify-center">
 
   <div class="container max-md:px-[5%] w-full px-[3%] md:my-[127px] my-[100px]">
     <div class="md:flex md:px-[94px] px-4 md:py-[96px] text-blackBlue gap-[61px]">

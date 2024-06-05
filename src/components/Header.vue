@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#1C1E53] flex justify-center">
+  <div class="temp bg-[#1C1E53] flex justify-center">
     <div class="container  max-md:px-[5%] flex flex-wrap relative">
       <div
         class="md:mb-[6%] md:mt-[12%] mb-[14%] mt-[30%] w-full flex md:flex-nowrap flex-wrap gap-[10%] items-center"
