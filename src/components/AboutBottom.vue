@@ -20,7 +20,7 @@ const getLink = (index) => {
   <div class="flex justify-center">
 
   <div class="container max-md:px-[5%] w-full px-[3%] md:py-[128px] text-blackBlue">
-    <h2 class="text-center leading-[64px] md:text-5xl text-4xl max-md:border-b-2 max-md:border-black font-semibold max-md:mx-8">
+    <h2 class="text-center leading-[64px] md:text-5xl text-4xl max-md:border-b-2 max-md:border-black font-semibold max-md:mx-4">
       Meet our team
     </h2>
     <div class="md:flex mt-12 w-full justify-between">
