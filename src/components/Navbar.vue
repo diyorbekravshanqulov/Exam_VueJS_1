@@ -58,12 +58,12 @@ const hamburger = () => {
 </script>
 
 <template>
-  <div class="bg-[#1C1E53] fixed w-full z-40">
+  <div class="bg-[#1C1E53] fixed w-full z-40 flex justify-center">
     <div
       id="hamMenu"
       class="container max-md:py-5 text-white flex md:py-[1%] w-full justify-between items-center"
     >
-      <a href="#"><img class="w-[80%]" src="/img/Logo.svg" alt="LOGO" /></a>
+      <a href="#"><img class="w-[80%]" src="../../public/logo.svg" alt="LOGO" /></a>
       <div class="flex gap-10 items-center">
         <router-link
           :to="link(index)"
