@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-center h-screen w-full bg-gradient-to-r from-gray-800 to-gray-900 overflow-hidden"
+    class="flex items-center justify-center h-screen w-full bg-gradient-to-r from-gray-800 to-gray-900 overflow-hidden max-md:px-[5%]"
   >
     <div class="relative w-full h-full">
       <div
