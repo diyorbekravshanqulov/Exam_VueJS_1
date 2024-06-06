@@ -11,7 +11,6 @@ import Temp from "../components/Temp.vue";
     <Navbar />
     <Pricing />
     <Accordion />
-    <!-- <Temp /> -->
     <Footer />
   </div>
 </template>
