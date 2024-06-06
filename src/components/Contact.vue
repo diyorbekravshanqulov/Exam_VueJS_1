@@ -49,6 +49,7 @@ const func = () => {
                 {{ item }}
               </label>
               <input
+                autocomplete="off"
                 v-if="index != 4"
                 :id="'input-' + index"
                 type="text"
