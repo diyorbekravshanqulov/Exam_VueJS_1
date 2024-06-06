@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-center h-screen w-full bg-gradient-to-r from-gray-800 to-gray-900 overflow-hidden max-md:px-[5%]"
+    class="flex items-center justify-center h-screen w-full bg-gradient-to-r from-gray-800 to-gray-900 overflow-hidden max-md:px-[15%]"
   >
     <div class="relative w-full h-full">
       <div
@@ -43,13 +43,13 @@
         <div class="flex flex-col md:flex-row">
           <button
             @click="router.push('/')"
-            class="min-w-[7em] mt-[3em] mr-[0.5em] py-2 px-8 outline-none border-2 border-[#2f3640] bg-transparent rounded-full text-[#242a31] font-medium cursor-pointer transition duration-200 text-[0.75em] hover:border-[#fff] font-righteous hover:text-[#fff] hover:shadow-2xl hover:shadow-white error__button--active"
+            class="min-w-[7em] mt-[3em] mr-[0.5em] py-2 px-10 outline-none border-2 border-[#2f3640] bg-transparent rounded-full text-[#242a31] font-medium cursor-pointer transition duration-200 text-[0.75em] hover:border-[#fff] font-righteous hover:text-[#fff] hover:shadow-2xl hover:shadow-white error__button--active"
           >
             HOME
           </button>
           <button
             @click="router.go(-1)"
-            class="min-w-[7em] mt-[3em] mr-[0.5em] py-2 px-8 outline-none border-2 border-[#2f3640] bg-transparent rounded-full text-[#242a31] font-medium cursor-pointer transition duration-200 text-[0.75em] hover:border-[#fff] font-righteous hover:text-[#fff] hover:shadow-2xl hover:shadow-white"
+            class="min-w-[7em] mt-[3em] mr-[0.5em] py-2 px-10 outline-none border-2 border-[#2f3640] bg-transparent rounded-full text-[#242a31] font-medium cursor-pointer transition duration-200 text-[0.75em] hover:border-[#fff] font-righteous hover:text-[#fff] hover:shadow-2xl hover:shadow-white"
           >
             BACK
           </button>

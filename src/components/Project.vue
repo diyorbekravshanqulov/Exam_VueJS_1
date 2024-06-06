@@ -8,12 +8,11 @@
         >
           View our projects
         </h2>
-        <a
+        <router-link to="/pricing"
           class="hover-underline-animation text-[14px] md:text-[16px] font-medium text-[#282938]"
-          href="#"
         >
           View Pricing &#8594;
-        </a>
+        </router-link>
       </div>
       <div class="md:grid grid-cols-3 max-md:flex max-md:flex-wrap gap-5 w-full mt-[64px]">
         <div

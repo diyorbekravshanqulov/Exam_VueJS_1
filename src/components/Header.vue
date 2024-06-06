@@ -22,11 +22,10 @@
             >
               View our work
             </button>
-            <af
+            <router-link to="/pricing"
               class="hover-underline-animation md:text-[16px] text-[14px] font-medium"
               style="color: rgba(255, 255, 255, 1)"
-              href="#"
-              >View Pricing &#8594;</af
+              >View Pricing &#8594;</router-link
             >
           </div>
         </div>
