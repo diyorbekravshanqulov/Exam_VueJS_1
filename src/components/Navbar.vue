@@ -56,7 +56,6 @@ const hamburger = () => {
   }
 };
 
-
 const isScrolled = ref(false);
 
 const handleScroll = () => {
@@ -70,8 +69,6 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
-
-
 </script>
 
 <template>
