@@ -23,19 +23,19 @@
           class="relative overflow-hidden group"
         >
           <div
-            :class="index === 0 ? 'w-1/2' : 'w-full'"
+            :class="index === 0 ? 'md:w-1/2 w-full' : 'w-full'"
             class="absolute top-0 left-0 duration-300 group-hover:left-0 h-full bg-gradient-to-br from-[#1C1E536B]/40 to-[#1C1E53] p-4 flex flex-col justify-end"
           >
             <div v-if="index == 0" class="md:px-12 md:py-[76px]">
-              <h3 class="text-white font-semibold text-sm md:text-2xl">
+              <h3 class="text-white font-semibold md:text-2xl">
                 Workhub office Webflow Webflow Design
               </h3>
-              <p class="text-white max-md:text-[10px] mt-4 max-md:mt-2 md:mb-10">
+              <p class="text-white max-md:text-[12px] mt-4 max-md:mt-2 mb-2 md:mb-10">
                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit
                 aliquam
               </p>
               <a
-                class="hover-underline-animation imgText text-[12px] md:text-[16px] font-medium text-[#FCD980]"
+                class="hover-underline-animation imgText text-[14px] md:text-[16px] font-medium text-[#FCD980]"
                 href="#"
               >
                 View Pricing &#8594;
