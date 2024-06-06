@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-center h-screen w-full bg-gradient-to-r from-gray-800 to-gray-900 overflow-hidden max-md:px-[15%]"
+    class="flex items-center justify-center h-screen w-full bg-gradient-to-r from-gray-800 to-gray-900 overflow-hidden px-[5%] max-md:px-[15%]"
   >
     <div class="relative w-full h-full">
       <div
@@ -42,22 +42,24 @@
         </div>
         <div class="flex flex-col md:flex-row">
           <button
-            @click="router.push('/')"
-            class="min-w-[7em] mt-[3em] mr-[0.5em] py-2 px-10 outline-none border-2 border-[#2f3640] bg-transparent rounded-full text-[#242a31] font-medium cursor-pointer transition duration-200 text-[0.75em] hover:border-[#fff] font-righteous hover:text-[#fff] hover:shadow-2xl hover:shadow-white error__button--active"
+            @click="goHome"
+            class="min-w-[7em] mt-[3em] mr-[0.5em] max-md:py-3 py-2 px-10 outline-none border-2 border-[#2f3640] bg-transparent rounded-full text-[#242a31] font-medium cursor-pointer transition duration-200 text-[0.75em] hover:border-[#fff] font-righteous hover:text-[#fff] hover:shadow-2xl hover:shadow-white error__button--active"
           >
             HOME
           </button>
           <button
-            @click="router.go(-1)"
-            class="min-w-[7em] mt-[3em] mr-[0.5em] py-2 px-10 outline-none border-2 border-[#2f3640] bg-transparent rounded-full text-[#242a31] font-medium cursor-pointer transition duration-200 text-[0.75em] hover:border-[#fff] font-righteous hover:text-[#fff] hover:shadow-2xl hover:shadow-white"
+            @click="goBack"
+            class="min-w-[7em] mt-[3em] mr-[0.5em] max-md:py-3 py-2 px-10 outline-none border-2 border-[#2f3640] bg-transparent rounded-full text-[#242a31] font-medium cursor-pointer transition duration-200 text-[0.75em] hover:border-[#fff] font-righteous hover:text-[#fff] hover:shadow-2xl hover:shadow-white"
           >
             BACK
           </button>
         </div>
       </div>
 
-
-      <canvas id="cord" class="absolute h-[300px] w-[300px] md:h-[500px] md:w-[500px]"></canvas>
+      <canvas
+        id="cord"
+        class="absolute h-[300px] w-[300px] md:h-[500px] md:w-[500px]"
+      ></canvas>
     </div>
   </div>
 </template>
@@ -66,6 +68,18 @@
 import { onMounted } from "vue";
 import { useRouter } from "vue-router";
 const router = useRouter();
+
+const goHome = () => {
+  router.push("/").then(() => {
+    location.reload();
+  });
+};
+
+const goBack = () => {
+  router.go(-1).then(() => {
+    location.reload();
+  });
+};
 
 function drawVisor() {
   const canvas = document.getElementById("visor");
