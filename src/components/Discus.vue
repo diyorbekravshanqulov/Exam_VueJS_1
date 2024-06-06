@@ -44,7 +44,7 @@ const parag = ref([
         Design that solves problems, one product at a time
       </h2>
       <div
-        class="grid md:grid-cols-3 grid-rows-2 gap-8 px-[14px] py[48px] mt-[47px] md:mb-[128px] pb-[64px]"
+        class="grid md:grid-cols-3 grid-rows-2 gap-4 md:gap-8 px-[14px] py[48px] mt-4 md:mt-[47px] md:mb-[128px] pb-[64px]"
       >
         <div
           v-for="(item, index) in h6"
@@ -53,10 +53,10 @@ const parag = ref([
         >
           <img class="max-md:mx-auto max-md:w-[20%]" :src="func(index)" alt="" />
           <!-- Adjust index -->
-          <h6 class="max-md:text-center md:text-2xl mt-[25px]" style="color: rgba(40, 41, 56, 1)">
+          <h6 class="max-md:text-center font-semibold md:text-2xl mt-[25px]" style="color: rgba(40, 41, 56, 1)">
             {{ item }}
           </h6>
-          <p class="mt-3 text-[14px] leading-7 text-justify indent-6 mdt:ext-[16px]" style="color: rgba(40, 41, 56, 1)">
+          <p class="mt-3 text-[14px] leading-7 text-justify indent-6 mdt:text-[16px]" style="color: rgba(40, 41, 56, 1)">
             {{ parag[0] }}
           </p>
           <!-- Access the first element of the 'parag' array -->

@@ -34,23 +34,21 @@
                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit
                 aliquam
               </p>
-              <a
+              <router-link to="/pricing"
                 class="hover-underline-animation imgText text-[14px] md:text-[16px] font-medium text-[#FCD980]"
-                href="#"
               >
                 View Pricing &#8594;
-              </a>
+              </router-link>
             </div>
             <div v-if="index != 0" class="md:px-14 md:py-[45px] md:w-[350px]">
               <h3 class="text-white font-semibold md:text-2xl md:mb-[10px]">
                 Unisaas Website Design
               </h3>
-              <a
+              <router-link to="/pricing"
                 class="hover-underline-animation imgText text-[14px] md:text-[16px] font-medium text-[#FCD980]"
-                href="#"
               >
                 View Pricing &#8594;
-              </a>
+              </router-link>
             </div>
           </div>
           <img class="w-full" :src="item" :alt="`Project image ${index + 1}`" />

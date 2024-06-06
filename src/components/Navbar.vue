@@ -78,7 +78,7 @@ onUnmounted(() => {
   >
     <div
       id="hamMenu"
-      class="container max-md:py-5 max-md:px-[5%] text-white flex md:py-[1%] w-full justify-between items-center"
+      class="container max-md:py-4 max-md:px-[5%] text-white flex md:py-[1%] w-full justify-between items-center"
     >
       <router-link to="/" href="#"
         ><img class="w-[80%]" src="../../public/logo.svg" alt="LOGO"
