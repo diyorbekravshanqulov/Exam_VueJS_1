@@ -25,19 +25,19 @@ onMounted(() => {
 const testimonials = ref([
   {
     text: "The best agency we’ve worked with so far. They understand our product and are able to add new features focus.",
-    img: "/women_pic.svg",
+    img: "/public/women_pic.svg",
     name: "Jenny Wilson",
     position: "Vice President",
   },
   {
     text: "This team is highly skilled and always delivers on time. Their dedication and expertise have greatly success.",
-    img: "/women_pic.svg",
+    img: "/public/women_pic.svg",
     name: "John Doe",
     position: "CEO",
   },
   {
     text: "Exceptional service and support. They always go above and beyond to meet our needs and ensure we are satisfied.",
-    img: "/women_pic.svg",
+    img: "/public/women_pic.svg",
     name: "Sarah Smith",
     position: "Marketing Director",
   },
