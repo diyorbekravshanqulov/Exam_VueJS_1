@@ -13,8 +13,12 @@
           v-for="(item, index) in pricing"
           :key="index"
           :class="index != 1 ? 'bg-[#F4F6FC]' : 'bg-[#1C1E53]'"
-          class="rounded-xl px-12 py-16 flex flex-col justify-between"
+          class="rounded-xl px-12 py-16 relative overflow-hidden flex flex-col justify-between"
         >
+          <div
+            v-if="index == 1"
+            class="z-10 w-[1000px] h-[1000px] rounded-full absolute top-[17%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white opacity-[6%]"
+          ></div>
           <div class="flex gap-4 items-center">
             <h3
               :class="index != 1 ? '' : 'text-white'"
@@ -48,7 +52,7 @@
               class="w-full"
             >
               <div class="flex items-center gap-3">
-                <span :class="index_ins[1] ? 'block':'hidden'">
+                <span :class="index_ins[1] ? 'block' : 'hidden'">
                   <svg
                     width="16"
                     height="21"
@@ -77,7 +81,7 @@
                     </defs>
                   </svg>
                 </span>
-                <span :class="!index_ins[1]? 'block':'hidden'">
+                <span :class="!index_ins[1] ? 'block' : 'hidden'">
                   <svg
                     width="16"
                     height="21"
@@ -123,11 +127,14 @@
                 </p>
               </div>
             </div>
-          </div>
-          <div class="mt-[79px] flex justify-center items-end">
-            <button :class="index != 1 ? '': '!bg-[#FCD980] text-blackBlue'" class="text-[#F4F6FC] bg-blackBlue px-[51px] py-[15px] rounded-[41px]">
-              Get started
-            </button>
+            <div class="mt-20 w-full flex justify-center items-end">
+              <button
+                :class="index != 1 ? '' : '!bg-[#FCD980] text-blackBlue'"
+                class="text-[#F4F6FC] bg-blackBlue px-[51px] py-[15px] rounded-[41px]"
+              >
+                Get started
+              </button>
+            </div>
           </div>
         </div>
       </div>
