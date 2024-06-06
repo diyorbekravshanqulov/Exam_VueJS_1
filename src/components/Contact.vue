@@ -61,7 +61,7 @@ const func = () => {
               :class="index == 4 ? 'col-span-2 row-span-2' : ''"
             >
               <label
-                class="md:leading-[32px] md:text-[18px] max-md:ml-8"
+                class="md:leading-[32px] md:text-[18px] max-md:ml-4"
                 :for="'input-' + index"
               >
                 {{ item }}
