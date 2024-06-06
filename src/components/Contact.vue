@@ -31,9 +31,9 @@ const func = () => {
         </p>
       </div>
 
-      <div class="w-full mt-16 md:px-[110px]">
+      <div class="w-full md:mt-16 mt-10 md:px-[110px]">
         <div
-          class="bg-[#F4F6FC] mx-auto md:rounded-[12px] py-[55px] px-[5%] md:px-[77px]"
+          class="bg-[#F4F6FC] mx-auto md:rounded-[12px] py-10 md:py-[55px] px-[5%] md:px-[77px]"
         >
           <form
             action=""
