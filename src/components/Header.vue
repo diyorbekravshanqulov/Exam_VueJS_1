@@ -1,3 +1,9 @@
+<script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+</script>
+
 <template>
   <div class="temp bg-[#1C1E53] flex justify-center">
     <div class="container  max-md:px-[5%] flex flex-wrap relative">
@@ -17,7 +23,7 @@
             eiusmod tempor incididunt.
           </p>
           <div class="flex items-center max-md:justify-between max-md:w-full max-md:px-4 mt-12 md:gap-10">
-            <button
+            <button @click="router.push('/work')"
               class="vibrate-rotate-button rounded-[41px] md:px-12 md:py-4 px-6 py-3 md:text-[18px] text-[14px] font-semibold"
             >
               View our work
