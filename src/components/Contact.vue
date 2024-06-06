@@ -61,7 +61,7 @@ const func = () => {
               :class="index == 4 ? 'col-span-2 row-span-2' : ''"
             >
               <label
-                class="md:leading-[32px] md:text-[18px]"
+                class="md:leading-[32px] md:text-[18px] max-md:mt-4"
                 :for="'input-' + index"
               >
                 {{ item }}
@@ -74,7 +74,7 @@ const func = () => {
                 :type="index == 1 ? 'email': 'text'"
                 :name="item.toLowerCase()"
                 :placeholder="input[index]"
-                class="border bg-transparent border-gray-300 text-[14px] rounded-[8px] mt-[6px] md:px-8 px-6 md:py-[18px] py-4 placeholder:text-[#000] max-md:mt-4"
+                class="border bg-transparent border-gray-300 text-[14px] rounded-[8px] mt-[6px] md:px-8 px-6 md:py-[18px] py-4 placeholder:text-[#000] max-md:mt-3"
               />
               <textarea
                 name=""
