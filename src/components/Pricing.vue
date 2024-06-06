@@ -1,14 +1,14 @@
 <template>
   <div class="temp flex justify-center md:mt-[92px]">
-    <div class="container md:my-[128px]">
-      <div class="text-blueBox px-[28%]">
-        <h2 class="text-center text-5xl font-semibold">Our Pricing Plans</h2>
-        <p class="mt-4 font-medium text-center">
+    <div class="container md:my-[128px] max-md:px-[5%] max-md:pt-[128px]">
+      <div class="text-blueBox md:px-[28%]">
+        <h2 class="text-center text-3xl md:text-5xl font-semibold">Our Pricing Plans</h2>
+        <p class="mt-4 md:font-medium text-sm text-center">
           When you’re ready to go beyond prototyping in Figma, Webflow is ready
           to help you bring your designs to life — without coding them.
         </p>
       </div>
-      <div class="grid grid-cols-3 gap-8 mt-16">
+      <div class="md:grid grid-cols-3 gap-8 max-md:flex max-md:flex-col max-md:gap-4 mt-4 md:mt-16">
         <div
           v-for="(item, index) in pricing"
           :key="index"
@@ -17,7 +17,7 @@
         >
           <div
             v-if="index == 1"
-            class="z-10 w-[1000px] h-[1000px] rounded-full absolute top-[17%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white opacity-[6%]"
+            class="z-10 w-[1000px] h-[1000px] rounded-full absolute top-[12%] md:top-[17%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white opacity-[6%]"
           ></div>
           <div class="flex gap-4 items-center">
             <h3

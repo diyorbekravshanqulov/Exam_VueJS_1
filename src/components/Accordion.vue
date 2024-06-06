@@ -36,23 +36,23 @@ const data = reactive([
 
 <template>
   <div class="temp flex justify-center md:mt-[92px]">
-    <div class="container md:mb-[128px] grid grid-cols-3 gap-[25px]">
+    <div class="container md:mb-[128px] md:grid grid-cols-3 gap-[25px] max-md:px-[5%] max-md:pb-10">
       <div>
-        <h2 class="text-blackBlue leading-[64px] text-5xl font-semibold">
+        <h2 class="text-blackBlue leading-[64px] max-md:text-center text-3xl md:text-5xl font-semibold">
           Frequently asked questions
         </h2>
-        <p class="mt-4 text-[#2405F2] text-lg cursor-pointer">
+        <p class="mt-4 text-[#2405F2] max-md:text-sm max-md:text-center text-lg cursor-pointer">
           Contact us For More Info
         </p>
       </div>
-      <div class="col-span-2 flex flex-wrap gap-2">
+      <div class="col-span-2 flex flex-wrap gap-2 max-md:mt-4">
         <div
           v-for="(item, index) in data"
           :key="index"
           @click="Accordion(index)"
-          class="w-full cursor-pointer flex flex-wrap shadow-md items-center justify-between p-6"
+          class="w-full cursor-pointer flex flex-wrap shadow-md items-center justify-between p-4 md:p-6"
         >
-          <div class="flex gap-[58px]">
+          <div class="items-center max-md:w-[90%] flex gap-4 md:gap-[58px]">
             <h6 class="text-[#2405F2] text-2xl">0{{ index + 1 }}</h6>
             <h6>{{ item.title }}</h6>
           </div>
@@ -75,7 +75,7 @@ const data = reactive([
             :class="item.show ? 'max-h-[150px]' : 'max-h-0'"
             class="overflow-hidden duration-500 ease-linear"
           >
-            <p class="text-blackBlue text-lg font-medium my-8 px-[110px]">
+            <p class="text-blackBlue md:text-lg max-md:text-justify max-md:indent-8 font-medium my-8 md:px-[110px]">
               {{ item.more }}
             </p>
           </div>
