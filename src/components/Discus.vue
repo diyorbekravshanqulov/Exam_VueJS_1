@@ -56,7 +56,7 @@ const parag = ref([
           <h6 class="max-md:text-center md:text-2xl mt-[25px]" style="color: rgba(40, 41, 56, 1)">
             {{ item }}
           </h6>
-          <p class="mt-3 text-[14px] leading-7 text-justify indent-8 mdt:ext-[16px]" style="color: rgba(40, 41, 56, 1)">
+          <p class="mt-3 text-[14px] leading-7 text-justify indent-6 mdt:ext-[16px]" style="color: rgba(40, 41, 56, 1)">
             {{ parag[0] }}
           </p>
           <!-- Access the first element of the 'parag' array -->
