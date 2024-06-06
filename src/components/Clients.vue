@@ -47,7 +47,7 @@ const testimonials = ref([
 
 <template>
   <div class="temp flex justify-center">
-    <div class="container max-md:px-[5%] grid md:grid-cols-3 gap-[10%] md:mt-[57px] md:py-[128px] py-[64px]">
+    <div class="container max-md:px-[5%] md:grid md:grid-cols-3 gap-[10%] md:mt-[57px] md:py-[128px] py-[64px]">
       <div class="md:col-span-1 col-span-2">
         <h3 class="md:text-[38px] text-2xl max-md:px-8 md:text-start text-center font-semibold leading-[56px]" style="color: rgba(40, 41, 56, 1)">
           What our clients say about us
@@ -56,7 +56,7 @@ const testimonials = ref([
           Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
         </p>
       </div>
-      <div class="col-span-2">
+      <div class="col-span-2 max-md:mt-8">
         <div class="swiper-container overflow-hidden">
           <div class="swiper-wrapper">
             <div class="swiper-slide" v-for="(testimonial, index) in testimonials" :key="index">
