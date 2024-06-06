@@ -18,8 +18,8 @@ const func = () => {
 
 <template>
   <div class="temp flex justify-center">
-    <div class="container max-md:px-[5%] md:py-[220px] py-[64px] max-md:mt-14">
-      <div class="md:px-[30%] w-full">
+    <div class="container md:py-[220px] py-[64px] max-md:mt-14">
+      <div class="md:px-[30%] w-full max-md:px-[5%]">
         <h2
           class="text-blueBox text-center font-semibold md:text-5xl text-3xl leading-[64px]"
         >
@@ -33,7 +33,7 @@ const func = () => {
 
       <div class="w-full mt-16 md:px-[110px]">
         <div
-          class="bg-[#F4F6FC] mx-auto rounded-[12px] py-[55px] px-4 md:px-[77px]"
+          class="bg-[#F4F6FC] mx-auto md:rounded-[12px] py-[55px] px-[5%] md:px-[77px]"
         >
           <form
             action=""
@@ -54,7 +54,7 @@ const func = () => {
                 type="text"
                 :name="item.toLowerCase()"
                 :placeholder="input[index]"
-                class="border border-gray-300 p-2 text-[14px] rounded-[8px] mt-[6px] px-8 py-[18px] placeholder:text-[#000] max-md:mt-4"
+                class="border border-gray-300 text-[14px] rounded-[8px] mt-[6px] md:px-8 px-6 md:py-[18px] py-4 placeholder:text-[#000] max-md:mt-4"
               />
               <textarea
                 name=""
@@ -63,7 +63,7 @@ const func = () => {
                 rows="5"
                 style="resize: none"
                 v-if="index == 4"
-                class="border border-gray-300 p-2 w-full rounded-[8px] mt-[6px] px-8 py-[18px] placeholder:text-[#000]"
+                class="border border-gray-300 p-2 w-full rounded-[8px] mt-[6px] md:px-8 px-6 md:py-[18px] py-4 placeholder:text-[#000]"
               ></textarea>
             </div>
             <input
