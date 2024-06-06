@@ -57,11 +57,11 @@ const func = () => {
             <div
               v-for="(item, index) in label"
               :key="index"
-              class="flex flex-col max-md:mt-4"
+              class="flex flex-col max-md:mt-5"
               :class="index == 4 ? 'col-span-2 row-span-2' : ''"
             >
               <label
-                class="md:leading-[32px] md:text-[18px]"
+                class="md:leading-[32px] md:text-[18px] max-md:ml-8"
                 :for="'input-' + index"
               >
                 {{ item }}
