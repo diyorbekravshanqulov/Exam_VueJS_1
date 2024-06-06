@@ -1,61 +1,59 @@
 <template>
   <div class="temp flex justify-center">
-    <div class="container max-md:px-[5%] flex flex-wrap mt-[57px] mb-[64px] md:mb-[128px]">
+    <div class="container max-md:px-[5%] mt-[57px] mb-[64px] md:mb-[128px]">
       <div class="flex w-full justify-between items-center mb-4">
-        <h2 class="font-semibold text-xl md:text-[40px]" style="color: rgba(40, 41, 56, 1)">
+        <h2
+          class="font-semibold text-xl md:text-[40px]"
+          style="color: rgba(40, 41, 56, 1)"
+        >
           View our projects
         </h2>
-        <a class="hover-underline-animation text-[14px] md:text-[16px] font-medium text-[#282938]" href="#">
+        <a
+          class="hover-underline-animation text-[14px] md:text-[16px] font-medium text-[#282938]"
+          href="#"
+        >
           View Pricing &#8594;
         </a>
       </div>
-      <div class="grid md:grid-cols-3 md:grid-rows-2 gap-[2%] w-full mt-[64px] relative">
+      <div class="grid md:grid-cols-3 gap-5 w-full mt-[64px]">
         <div
           v-for="(item, index) in imgs"
           :key="index"
-          :class="['relative', 'group', getClassForIndex(index)]"
+          :class="index === 0 ? 'col-span-2 row-span-2' : ''"
+          class="relative overflow-hidden group"
         >
-          <img class="w-full" :src="item" :alt="`Project image ${index + 1}`" />
           <div
-            v-if="index === 1 || index === 3"
-            class="absolute top-0 w-full h-full z-10"
+            :class="index === 0 ? 'w-1/2' : 'w-full'"
+            class="absolute top-0 left-0 duration-300 group-hover:left-0 h-full bg-gradient-to-br from-[#1C1E536B]/40 to-[#1C1E53] p-4 flex flex-col justify-end"
           >
-            <img
-              class="w-full h-full object-cover duration-300"
-              :class="getClassForIndexImg(index)"
-              :src="item"
-              alt=""
-            />
-            <div
-              v-if="index === 1"
-              class="text_one absolute duration-300 z-25 w-[313px] bottom-[76px] left-full group-hover:left-0 opacity-0"
-            >
-              <h4 class="text-white leading-[36px] text-2xl font-semibold">
+            <div v-if="index == 0" class="px-12 py-[76px]">
+              <h3 class="text-white font-semibold md:text-2xl">
                 Workhub office Webflow Webflow Design
-              </h4>
-              <p class="mt-4 text-white leading-[28px] mb-12">
-                Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam
+              </h3>
+              <p class="text-white mt-4 max-md:mt-2 md:mb-10">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam
               </p>
               <a
-                class="hover-underline-animation orange text-[16px] font-medium text-[#FCD980]"
+                class="hover-underline-animation imgText text-[14px] md:text-[16px] font-medium text-[#FCD980]"
                 href="#"
-                >View Pricing &#8594;
+              >
+                View Pricing &#8594;
               </a>
             </div>
-            <div
-              v-if="index === 3"
-              class="text_two absolute duration-300 z-25 w-[313px] pr-[2%] top-[22%] right-full group-hover:right-0 opacity-0"
-            >
-              <h4 class="text-white leading-[36px] text-2xl font-semibold mb-[10px]">
+            <div v-if="index != 0" class="px-14 py-[45px]">
+              <h3 class="text-white font-semibold md:text-2xl md:mb-[10px]">
                 Unisaas Website Design
-              </h4>
+              </h3>
               <a
-                class="hover-underline-animation orange text-[16px] font-medium text-[#FCD980]"
+                class="hover-underline-animation imgText text-[14px] md:text-[16px] font-medium text-[#FCD980]"
                 href="#"
-                >View Pricing &#8594;</a
               >
+                View Pricing &#8594;
+              </a>
             </div>
           </div>
+          <img class="w-full" :src="item" :alt="`Project image ${index + 1}`" />
         </div>
       </div>
     </div>
@@ -65,33 +63,7 @@
 <script setup>
 import { ref } from "vue";
 
-const imgs = ref([
-  "/project_women.svg",
-  "/before.svg",
-  "/image.png",
-  "/before2.svg",
-  "/project_women2.svg",
-]);
-
-const getClassForIndex = (index) => {
-  if (index === 0) {
-    return "col-span-2 row-span-2";
-  } else if (index === 2 || index === 4) {
-    return "col-span-1";
-  } else {
-    return "hidden";
-  }
-};
-
-const getClassForIndexImg = (index) => {
-  if (index === 1) {
-    return "group-hover:left-0 -left-full";
-  } else if (index === 3) {
-    return "group-hover:right-0 -right-full";
-  } else {
-    return "";
-  }
-};
+const imgs = ref(["/project_women.svg", "/image.png", "/project_women2.svg"]);
 </script>
 
 <style scoped>
@@ -112,18 +84,23 @@ const getClassForIndexImg = (index) => {
   transition: width 0.3s ease;
 }
 
+.imgText::after {
+  background: #fcd980;
+}
 .hover-underline-animation:hover::after {
   width: 100%;
   left: 0;
 }
 
-.text_one,
-.text_two {
-  transition: opacity 0.3s ease;
+.group .absolute {
+  left: -100%;
 }
 
-.group:hover .text_one,
-.group:hover .text_two {
-  opacity: 1;
+.group:hover .absolute {
+  left: 0;
+}
+
+.text-white {
+  color: white;
 }
 </style>

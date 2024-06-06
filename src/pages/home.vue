@@ -11,8 +11,8 @@ import Temp from "../components/Temp.vue"
   <div>
     <Navbar />
     <Header />
-    <!-- <Project /> -->
-    <Temp />
+    <Project />
+    <!-- <Temp /> -->
     <Discus />
     <Clients />
     <Footer />
