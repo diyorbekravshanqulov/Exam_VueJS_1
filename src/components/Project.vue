@@ -41,7 +41,7 @@
                 View Pricing &#8594;
               </a>
             </div>
-            <div v-if="index != 0" class="px-14 py-[45px]">
+            <div v-if="index != 0" class="px-14 py-[45px] w-[350px]">
               <h3 class="text-white font-semibold md:text-2xl md:mb-[10px]">
                 Unisaas Website Design
               </h3>
