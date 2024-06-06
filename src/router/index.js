@@ -34,7 +34,7 @@ const routes = [
   {
     path: "/work",
     name: "work",
-    component: () => import("../pages/work_us.vue"),
+    component: () => import("../pages/work.vue"),
   },
   {
     path: "/blog",
