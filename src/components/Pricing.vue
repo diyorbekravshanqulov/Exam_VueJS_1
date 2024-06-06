@@ -8,7 +8,7 @@
           to help you bring your designs to life — without coding them.
         </p>
       </div>
-      <div class="md:grid grid-cols-3 gap-8 max-md:flex max-md:flex-col max-md:gap-4 mt-4 md:mt-16">
+      <div class="md:grid grid-cols-3 gap-8 max-md:flex max-md:flex-col max-md:gap-4 mt-8 md:mt-16">
         <div
           v-for="(item, index) in pricing"
           :key="index"
