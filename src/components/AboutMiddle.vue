@@ -16,7 +16,7 @@ const h3 = ref(["Goal focussed", "Continuous improvement"])
           </p>
         </div>
       </div>
-    <img class="w-full md:m-0 mt-6" src="../../public/aboutMiddle.svg" alt="">
+    <img class="w-full md:m-0 mt-4" src="../../public/aboutMiddle.svg" alt="">
   </div>
   </div>
 </template>
