@@ -34,7 +34,7 @@ const func = (index) => {
   </div>
 </template>
 
-<style>
+<style scoped>
 /* Add a custom style for the active button text color */
 .text-blueBox {
   color: #2405F2;
