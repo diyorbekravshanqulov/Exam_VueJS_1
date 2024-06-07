@@ -151,7 +151,7 @@ onUnmounted(() => {
 
   <div
     id="hambur"
-    class="w-[65%] flex -right-full duration-700 bg-[#1C1E53]/70 px-[10%] flex-col gap-6 py-[30%] h-screen items-start fixed z-30 shadow-2xl shadow-[#1C1E53]"
+    class="w-[65%] flex -right-full duration-500 bg-[#1C1E53]/70 px-[10%] flex-col gap-6 py-[30%] h-screen items-start fixed z-30 shadow-2xl shadow-[#1C1E53]"
   >
     <router-link
       @click="hamburger()"
