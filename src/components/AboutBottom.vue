@@ -19,7 +19,7 @@ const getLink = (index) => {
 <template>
   <div class="temp flex justify-center bg-[#F4F6FC]">
 
-  <div class="container max-md:flex justify-center flex-wrap w-full px-[3%] md:py-[128px] text-blackBlue py-[64px]">
+  <div class="container max-md:flex justify-center flex-wrap w-full px-[3%] md:py-[128px] text-blackBlue py-10">
     <h2 class="text-center leading-[64px] md:text-5xl text-4xl max-md:border-b-2 max-md:border-black font-semibold max-md:mx-4">
       Meet our team
     </h2>

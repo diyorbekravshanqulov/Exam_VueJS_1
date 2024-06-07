@@ -75,7 +75,7 @@ const data = reactive([
             :class="item.show ? 'max-h-[150px]' : 'max-h-0'"
             class="overflow-hidden duration-500 ease-linear"
           >
-            <p class="text-blackBlue md:text-lg max-md:text-justify max-md:indent-8 font-medium my-8 md:px-[110px]">
+            <p class="text-blackBlue md:text-lg max-md:text-justify max-md:ml-10 font-medium my-8 md:px-[80px]">
               {{ item.more }}
             </p>
           </div>

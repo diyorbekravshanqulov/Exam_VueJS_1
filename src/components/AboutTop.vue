@@ -2,7 +2,7 @@
 <template>
   <div class="temp flex justify-center">
     <div
-      class="container md:flex items-center w-full justify-between max-md:px-[5%] gap-[13%] max-md:mt-[128px] md:pt-[128px]"
+      class="container md:flex items-center w-full justify-between max-md:px-[5%] gap-[13%] max-md:mt-[110px] md:pt-[128px]"
     >
       <div>
         <p class="text-blackBlue md:text-[18px] max-md:text-center">About us</p>
