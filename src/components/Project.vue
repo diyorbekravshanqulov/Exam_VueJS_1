@@ -8,11 +8,11 @@
         >
           View our projects
         </h2>
-        <router-link to="/pricing"
+        <p
           class="hover-underline-animation text-[14px] md:text-[16px] font-medium text-[#282938]"
         >
-          View Pricing &#8594;
-        </router-link>
+          View more &#8594;
+      </p>
       </div>
       <div class="md:grid grid-cols-3 max-md:flex max-md:flex-wrap gap-5 w-full mt-[64px]">
         <div
@@ -33,7 +33,7 @@
                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit
                 aliquam
               </p>
-              <router-link to="/pricing"
+              <router-link to="/work"
                 class="hover-underline-animation imgText text-[14px] md:text-[16px] font-medium text-[#FCD980]"
               >
                 View Pricing &#8594;
@@ -43,7 +43,7 @@
               <h3 class="text-white font-semibold md:text-2xl md:mb-[10px]">
                 Unisaas Website Design
               </h3>
-              <router-link to="/pricing"
+              <router-link to="/work"
                 class="hover-underline-animation imgText text-[14px] md:text-[16px] font-medium text-[#FCD980]"
               >
                 View Pricing &#8594;
