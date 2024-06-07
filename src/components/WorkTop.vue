@@ -22,7 +22,7 @@ const getLink = (index) => {
 </script>
 <template>
   <div class="flex bg-[#F4F6FC] justify-center">
-    <div class="container px-[25%] py-[96px]">
+    <div class="container px-[25%] pb-[96px] pt-[186px]">
       <p class="text-blueBox text-center font-medium">What we created</p>
       <h2 class="text-center font-semibold text-5xl mt-1">
         Our Work Portfolio
@@ -33,7 +33,7 @@ const getLink = (index) => {
         accessible.
       </p>
       <div
-        class="flex md:gap-[27px] items-center max-md:w-full max-md:justify-between mt-8"
+        class="flex md:gap-[27px] items-center max-md:w-full justify-center max-md:justify-between mt-8"
       >
         <a
           class="max-md:w-full"
