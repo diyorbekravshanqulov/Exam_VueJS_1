@@ -18,7 +18,7 @@
         <div
           v-for="(item, index) in imgs"
           :key="index"
-          :class="index === 0 ? 'col-span-2 row-span-2' : ''"
+          :class="index === 0 ? 'col-span-2 row-span-2 w-full' : 'w-full'"
           class="relative overflow-hidden group"
         >
           <div
