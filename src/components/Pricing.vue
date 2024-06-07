@@ -52,7 +52,7 @@
               class="w-full"
             >
               <div class="flex items-center gap-3">
-                <span :class="index_ins[1] ? 'block' : 'hidden'">
+                <span v-if="item_ins[1]">
                   <svg
                     width="16"
                     height="21"
@@ -81,7 +81,7 @@
                     </defs>
                   </svg>
                 </span>
-                <span :class="!index_ins[1] ? 'block' : 'hidden'">
+                <span v-else>
                   <svg
                     width="16"
                     height="21"
@@ -119,7 +119,7 @@
                 <p
                   :class="[
                     index !== 1 ? '' : 'text-white',
-                    item_ins[1] === false ? 'opacity-[70%]' : '',
+                    !item_ins[1] ? 'opacity-[70%]' : '',
                   ]"
                   class="text-blueBox"
                 >
