@@ -48,8 +48,8 @@ const data = reactive([
 
 <template>
   <div class="flex justify-center">
-    <div class="container pt-[96px]">
-      <div class="flex gap-8 justify-center">
+    <div class="container md:pt-[96px] pt-10 max-md:px-[5%]">
+      <div class="flex md:gap-8 gap-4 max-md:grid grid-cols-2 justify-center">
         <button
           v-for="(item, index) in buttons"
           :key="index"
@@ -58,21 +58,21 @@ const data = reactive([
             'change': activeIndex === index,
             'text-blackBlue': activeIndex !== index,
           }"
-          class="text-lg"
+          class="md:text-lg"
         >
           {{ item }}
         </button>
       </div>
 
-      <div class="grid grid-cols-2 gap-x-[34px] gap-y-16 mt-12">
+      <div class="md:grid grid-cols-2 gap-x-[34px] md:gap-y-10 mt-16 max-md:flex max-md:flex-wrap max-md:gap-4">
         <div
           v-for="(item, index) in data"
           :key="index"
-          class="h-[576px] text-blackBlue"
+          class=" text-blackBlue  max-md:shadow-md"
         >
           <img :src="item.img" alt="img" />
-          <div class="mt-6">
-            <h3 class="font-semibold text-[38px]">Template {{ index+ 1 }}</h3>
+          <div class="mt-6 px-4 pb-4">
+            <h3 class="font-semibold text-3xl md:text-[38px]">Template {{ index+ 1 }}</h3>
             <p class="mt-3 text-justify">{{ item.info }}</p>
             <div>
               <button class="hover-underline-animation cursor-pointer mt-6 font-medium">{{ item.btn }} &#8594;</button>

@@ -22,18 +22,18 @@ const getLink = (index) => {
 </script>
 <template>
   <div class="flex bg-[#F4F6FC] justify-center">
-    <div class="container px-[25%] pb-[96px] pt-[186px]">
-      <p class="text-blueBox text-center font-medium">What we created</p>
-      <h2 class="text-center font-semibold text-5xl mt-1">
+    <div class="container md:px-[25%] px-4 md:pb-[96px] pb-10 pt-[100px] md:pt-[186px]">
+      <p class="text-blueBox text-center font-medium max-md:text-sm">What we created</p>
+      <h2 class="text-center font-semibold text-3xl md:text-5xl mt-1">
         Our Work Portfolio
       </h2>
-      <p class="text-blueBox text-center font-medium mt-6">
+      <p class="text-blueBox text-center max-md:text-sm font-medium mt-6">
         We help teams create great digital products by providing them with tools
         and technology to make the design-to-code process universally
         accessible.
       </p>
       <div
-        class="flex md:gap-[27px] items-center max-md:w-full justify-center max-md:justify-between mt-8"
+        class="flex md:gap-[27px] items-center max-md:w-full justify-center max-md:justify-between mt-8 max-md:px-4"
       >
         <a
           class="max-md:w-full"
