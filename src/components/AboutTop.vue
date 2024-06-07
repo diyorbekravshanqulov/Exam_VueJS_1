@@ -11,7 +11,7 @@
         >
           Our designs solve problems
         </h1>
-        <p class="md:mt-[31px] mt-4 text-justify text-blackBlue max-md:text-[14px] indent-6 leading-[28px]">
+        <p class="md:mt-[31px] mt-4 text-justify text-blackBlue max-md:text-[14px] max-md:indent-6 leading-[28px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam.
