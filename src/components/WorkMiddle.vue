@@ -48,7 +48,7 @@ const data = reactive([
 
 <template>
   <div class="flex justify-center">
-    <div class="container py-[96px]">
+    <div class="container pt-[96px]">
       <div class="flex gap-8 justify-center">
         <button
           v-for="(item, index) in buttons"
@@ -74,7 +74,9 @@ const data = reactive([
           <div class="mt-6">
             <h3 class="font-semibold text-[38px]">Template {{ index+ 1 }}</h3>
             <p class="mt-3 text-justify">{{ item.info }}</p>
-            <p class="mt-6 font-medium">{{ item.btn }} &#8594;</p>
+            <div>
+              <button class="hover-underline-animation cursor-pointer mt-6 font-medium">{{ item.btn }} &#8594;</button>
+            </div>
           </div>
         </div>
       </div>
@@ -88,4 +90,32 @@ const data = reactive([
 .change {
   color: #2405f2;
 }
+
+
+.hover-underline-animation {
+  position: relative;
+  text-decoration: none;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #282938;
+  transition: width 0.3s ease;
+}
+
+.hover-underline-animation::after {
+  background: #282938;
+}
+
+.hover-underline-animation:hover::after {
+  width: 100%;
+  left: 0;
+}
+
 </style>
