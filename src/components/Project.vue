@@ -2,17 +2,17 @@
   <div class="temp flex justify-center">
     <div class="container max-md:px-[5%] mt-[57px] mb-[64px] md:mb-[128px]">
       <div class="flex w-full justify-between items-center mb-4">
-        <h2
+        <router-link to="/work"
           class="font-semibold text-xl md:text-[40px]"
           style="color: rgba(40, 41, 56, 1)"
         >
           View our projects
-        </h2>
-        <p
+        </router-link>
+        <router-link to="/pricing"
           class="hover-underline-animation text-[14px] md:text-[16px] font-medium text-[#282938]"
         >
           View more &#8594;
-      </p>
+      </router-link>
       </div>
       <div class="md:grid grid-cols-3 max-md:flex max-md:flex-wrap gap-5 w-full mt-[64px]">
         <div
@@ -36,7 +36,7 @@
               <router-link to="/work"
                 class="hover-underline-animation imgText text-[14px] md:text-[16px] font-medium text-[#FCD980]"
               >
-                View Pricing &#8594;
+                View project &#8594;
               </router-link>
             </div>
             <div v-if="index != 0" class="md:px-14 md:py-[45px] md:w-[350px]">
@@ -46,7 +46,7 @@
               <router-link to="/work"
                 class="hover-underline-animation imgText text-[14px] md:text-[16px] font-medium text-[#FCD980]"
               >
-                View Pricing &#8594;
+                View portfolio &#8594;
               </router-link>
             </div>
           </div>
