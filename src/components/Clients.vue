@@ -101,7 +101,7 @@ const testimonials = ref([
             </div>
           </div>
           <div
-            class="flex items-center gap-[10px] absolute bottom-0 right-0 z-10"
+            class="flex items-center gap-[10px] absolute bottom-0 right-0 z-10 max-md:-translate-y-1/3"
           >
             <button
               @click="goToPrevSlide"
