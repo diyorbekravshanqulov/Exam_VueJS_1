@@ -50,7 +50,7 @@ const data = reactive([
           v-for="(item, index) in data"
           :key="index"
           @click="Accordion(index)"
-          class="w-full cursor-pointer flex flex-wrap shadow-md items-center justify-between p-4 md:p-6"
+          class="w-full cursor-pointer flex flex-wrap border border-b-gray-300 items-center justify-between p-4 md:p-6"
         >
           <div class="items-center max-md:w-[90%] flex gap-4 md:gap-[58px]">
             <h6 class="text-[#2405F2] text-2xl">0{{ index + 1 }}</h6>

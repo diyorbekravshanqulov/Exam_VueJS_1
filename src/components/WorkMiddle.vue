@@ -70,8 +70,8 @@ const data = reactive([
           :key="index"
           class=" text-blackBlue  max-md:shadow-md"
         >
-          <img :src="item.img" alt="img" />
-          <div class="mt-6 px-4 pb-4">
+          <img :src="item.img" alt="img" class="w-full" />
+          <div class="mt-6 max-md:px-4 max-md:pb-4">
             <h3 class="font-semibold text-3xl md:text-[38px]">Template {{ index+ 1 }}</h3>
             <p class="mt-3 text-justify">{{ item.info }}</p>
             <div>
